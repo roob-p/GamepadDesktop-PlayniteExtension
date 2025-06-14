@@ -22,7 +22,8 @@
   - When the osk is opened the, `tabjump_next` (RT for default) is used for mouseleft click. `A` is used for press the button of the OnScreen keyboard (this is the only funcion not configurable).
   - You can change the slot with `$explorerAndSlot_back` (`$LS` for default) which also shows/hides the Playnite Explorer panel to the left, and `$FilterAndSlot_back` (`$RS` for default) witch also show/hides the Playnite Filter panel to the right) by long pressing them.
   - Put Playnite in Fullscreen by long pressing `$globalsearch` (`$back` for default) which also is used to open the Playnite Global search.
-- The default keys are:  
+- The default keys are:
+  
   -*`(Left Stick)`* `LSX` → `$mousemovx` , `LSY` → `$mousemovy` (mouse movement)    
   -*`(Right Stick)`* `RSY` → `$scroll` (bar scrollI)  
   -`A` → `$mouseleft` (mouseleft click)  
