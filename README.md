@@ -43,7 +43,7 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
 
 ## ⚠️ Notes:
 - Please, make sure to maximize Playnite. It's required for the extension to work properly.   
-- On each start, the script loads reachable points from the first slot, under [Global] section. You can also edit them directly open the `config.ini`. [Global.slo2] and [Global.slot3] contains the points of the other slots.
+- On each start, the script loads reachable points from the first slot, under `[Global]` section. You can also edit them directly open the `config.ini` manually or by using the corresponding menu option.. `[Global.slot2]` and `[Global.slot3]` contains the points of the other slots.
 - The extension uses the window title of Playnite Global Search for interacts with Global Search. Since this varies by language, only the most common cases are supported. If you encounter issues, please open an issue and specify your language. In the meantime, switching Playnite to English is recommended. 
 
   </br>
