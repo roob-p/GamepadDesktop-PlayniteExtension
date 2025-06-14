@@ -1,5 +1,5 @@
-# GamepadDesktop-(PlayniteExtension)
-🎮 Control Playnite Desktop using your Xinput gamepad, with an integrated virtual keyboard and multiple functions mapped to the buttons.
+# 🎮 GamepadDesktop-(PlayniteExtension)
+Control Playnite Desktop using your Xinput gamepad, with an integrated virtual keyboard and multiple functions mapped to the buttons.
 
 ✨ This extension lets you use your gamepad with Playnite Desktop, allowing you to control various functions (mouse, scrollbars, Playnite shortcuts) and reach customizable sections and panels with a click. A virtual keyboard, to interact with fields, search and global search panels, is included.  
 
