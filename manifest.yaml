@@ -1,25 +1,9 @@
 AddonId: GamepadDesktop
-Type: Generic
-Name: GamepadDesktop
-Author: roob-p
-ShortDescription: Control Playnite Desktop using your Xinput gamepad, with an integrated virtual keyboard and multiple functions mapped to the buttons.
-InstallerManifestUrl: https://raw.githubusercontent.com/roob-p/GamepadDesktop-PlayniteExtension/main/manifest.yaml
-SourceUrl: https://github.com/roob-p/GamepadDesktop-PlayniteExtension
-Description: |
-  * ✨ This extension lets you use your gamepad with Playnite Desktop, allowing you to control various functions (mouse, scrollbars, Playnite shortcuts) and reach specific sections and panels through customizable positions. A virtual keyboard, to interact with fields, search and global search panels, is included.  
-
-Tags:
-  - Generic
-  - Gamepad
-  - Controller
-  - Xinput
-  - Keyboard
-  - Onscreen Keyboard
-  - Virtual Keyboard
-  - OSK
-  - Shortcuts
-
-Links:
-  GitHub: https://github.com/roob-p/GamepadDesktop-PlayniteExtension
-  Donate (Ko-fi): https://ko-fi.com/roobp.com
-IconUrl: https://raw.githubusercontent.com/roob-p/GamepadDesktop-PlayniteExtension/main/iconW.png
+Packages:
+  - Version: 1.0.1
+    RequiredApiVersion: 6.0.0
+    ReleaseDate: 2025-06-15
+    PackageUrl: >-
+     https://github.com/roob-p/GamepadDesktop-PlayniteExtension/releases/download/v1.0.1/GamepadDesktop_v1.0.1.pext
+    Changelog:
+    - Initial release
