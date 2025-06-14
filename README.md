@@ -53,8 +53,20 @@ If you enjoy GamepadDesktop, you can buy me a coffee. It will be appreciated ;)
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/E1E214R1KB)
 
 
-
 ### 📺 See it in action!
 Here's a quick demo of how GamepadDesktop works:
+
+<table style="width: 100%; text-align: left;">
+  <tr>
+    <td style="padding: 0; vertical-align: top;">
+      <img src="https://github.com/roob-p/GamepadDesktop-PlayniteExtension/blob/main/media/1.gif" style="width: 100%; height: auto;" />
+    </td>
+  </tr>
+   <tr>
+    <td style="padding: 0; vertical-align: top;">
+      <img src="https://github.com/roob-p/GamepadDesktop-PlayniteExtension/blob/main/media/2.gif" style="width: 100%; height: auto;" />
+         </td>
+  </tr>
+</table>
 
   
