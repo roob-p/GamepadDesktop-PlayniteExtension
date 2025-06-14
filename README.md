@@ -52,6 +52,11 @@ If you enjoy GamepadDesktop, you can buy me a coffee. It will be appreciated ;)
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/E1E214R1KB)
 
+- Install directly:
+
+- Download last version:
+
+
 
 ### 📺 See it in action!
 Here's a quick demo of how GamepadDesktop works:
