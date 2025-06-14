@@ -20,8 +20,8 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
 - Use the `Gamepad-Wizard` to edit panel and section positions: simply place the mouse over the indicated points and wait a few seconds. No restart required.
 - You can edit the controller layout by editing the `Keys` section in `config.ini`. Almost all buttons can be changed, with few exceptions:
   - When the osk is opened the, `tabjump_next` (RT for default) is used for mouseleft click. `A` is used for press the button of the OnScreen keyboard (this is the only funcion not configurable).
-  - You can change the slot with `$explorerAndSlot_back` (`$LS` for default) which also shows/hides the Playnite Explorer panel to the left, and `$FilterAndSlot_back` (`$RS` for default) witch also show/hides the Playnite Filter panel to the right) by long pressing them.
-  - Put Playnite in Fullscreen by long pressing `$globalsearch` (`$back` for default) which also is used to open the Playnite Global search with a quick press.
+  - Change slot by long-pressing `$explorerAndSlot_back` (`LS` by default) and `$FilterAndSlot_next` (`RS` by default). Short-pressing toggles Playnite’s Explorer and Filter panels.
+  - Long-press `$globalsearch` (`back` by default) to launch Playnite fullscreen. Short-press it to open Global Search.
 - The default keys are:
   
   -*`(Left Stick)`* `LSX` → `$mousemovx` , `LSY` → `$mousemovy` (mouse movement)    
