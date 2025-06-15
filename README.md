@@ -40,12 +40,12 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
   -*`(Right Stick Button)`* `RS` → `$filterAndSlot_next` (toggle Playnite Filter panel, or change slot by long press)
 
   
-- You can open `config.ini` and also edit manually several variables:
-  - Mouse settings *(under `[Mouse]` section):* `$sensitivity`, `$deadzone` and `$smoothfactor`.
+  #### You can open `config.ini` and also edit manually several variables:
+  - Mouse settings: `$sensitivity`, `$deadzone` and `$smoothfactor` *(`[Mouse]` section):*
   - Reachable positions of sections and panels *(`[Global]` section):*
-   - `$sectionNx`, `$sectionNy` → indicates the 3 points reachable with `$section_back` and `$section_next` *(`LB` and `RB` by default).*  
-   - `$sectionNpanelx`, `$sectionNpanely` → reachable points of the Explorer's Tab (if you are in the first zone) or the Zoom control bar (if you are in the second zone).  
-   - `$limit1`,`$limit2` → horizontal points which divide the screen in three zones. They are calculated in this manner: *DesktopXRes/ChosenMousePosition*, rounded to the third decimal.
+    - `$sectionNx`, `$sectionNy` → indicates the 3 points reachable with `$section_back` and `$section_next` *(`LB` and `RB` by default).*  
+    - `$sectionNpanelx`, `$sectionNpanely` → reachable points of the Explorer's Tab (if you are in the first zone) or the Zoom control bar (if you are in the second zone).  
+    - `$limit1`,`$limit2` → horizontal points which divide the screen in three zones. They are calculated in this manner: *DesktopXRes/ChosenMousePosition*, rounded to the third decimal.
   - `$CurrentSlot` *(`[Wizard]` section)* → automatically modified when you change slots with  `$explorerAndSlot_back` and `$filterAndSlot_next`. Used by the Wizard to save the above points in the indicated slot. Each time GamepadDesktop starts is set to the first slot, but you can also edit manually without running the GamepadDesktop (if for some reason you want to do that manually).  
 
  
