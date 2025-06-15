@@ -19,9 +19,9 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
 - The extension divides the screen into "sections" that can be reached by pressing buttons (*for default:* `LB` *and* `RB`). It also allows access to specific panels and can launch Playnite functions via shortcuts.
 - Use the `GamepadDesktop-Wizard` to edit panel and section positions: simply place the mouse over the indicated points and wait a few seconds. No restart required.
 - You can edit the controller layout by editing the `Keys` section in `config.ini`. Almost all buttons can be changed, with few exceptions:
-  - When the osk is opened the, `tabjump_next` (`RT` *for default*) is used for mouseleft click. `A` is used for press the button of the OnScreen keyboard *(this is the only funcion not configurable).*
+  - When the osk is opened the, `tabjump_next` (`RT` *for default*) is used for left mouse click. `A` is used to press the buttons of the OnScreen keyboard *(this is the only funcion not configurable).*
   - Change slot by long-pressing `$explorerAndSlot_back` (`LS` *by default*) and `$FilterAndSlot_next` (`RS` *by default*). Short-pressing toggles Playnite’s Explorer and Filter panels.
-  - Long-press `$globalsearch` (`back` *by default*) to launch Playnite fullscreen. Short-press it to open Global Search.
+  - Long-press `$globalsearch` (`back` *by default*) to launch Playnite fullscreen; short-press it to open Global Search.
 - The default keys are:
   
   -*`(Left Stick)`* `LSX` → `$mousemovx` , `LSY` → `$mousemovy` (mouse movement)    
@@ -56,7 +56,8 @@ If you enjoy GamepadDesktop, you can buy me a coffee. It will be appreciated ;)
 
 - Download last version:
 
-
+<!--![1](https://github.com/roob-p/GamepadDesktop-PlayniteExtension/blob/main/media/1.gif)!-->
+<!--[2](https://github.com/roob-p/GamepadDesktop-PlayniteExtension/blob/main/media/2.gif)!-->
 
 ### 📺 See it in action!
 Here's a quick demo of how GamepadDesktop works:
@@ -73,5 +74,20 @@ Here's a quick demo of how GamepadDesktop works:
          </td>
   </tr>
 </table>
+
+
+
+
+### 📺 Here's how the Wizard works!:  
+<table style="width: 100%; text-align: left;">
+<tr>
+    <td style="padding: 0; vertical-align: top;">
+      <img src="https://github.com/roob-p/GamepadDesktop-PlayniteExtension/blob/main/media/1.gif" style="width: 100%; height: auto;" />
+    </td>
+ </tr>
+ </table>
+<!--![Wizard](https://github.com/roob-p/GamepadDesktop-PlayniteExtension/blob/main/media/3.gif)!-->
+
+
 
   
