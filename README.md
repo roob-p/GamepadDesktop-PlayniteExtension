@@ -17,7 +17,7 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
 
 ## ⚙️ How it works:
 - The extension divides the screen into "sections" that can be reached by pressing buttons (*for default:* `LB` *and* `RB`). It also allows access to specific panels and can launch Playnite functions via shortcuts.
-- Use the `GamepadDesktop-Wizard` to edit panel and section positions: simply place the mouse over the indicated points and wait a few seconds. No restart required.
+- Use the `GamepadDesktop-Wizard` to edit panel and section positions: simply place the mouse over the indicated points and wait a few seconds. The Wizard saves the positions of the current slot. No restart required.
 - You can edit the controller layout by editing the `Keys` section in `config.ini`. Almost all buttons can be changed, with few exceptions:
   - When the OSK is open, `tabjump_next` (`RT` *for default*) is used for left mouse click. `A` is used to press buttons on the OnScreen Keyboard *(this is the only funcion not configurable).*
   - Change slot by long-pressing `$explorerAndSlot_back` (`LS` *by default*) and `$FilterAndSlot_next` (`RS` *by default*). Short-pressing toggles Playnite’s Explorer and Filter panels.
@@ -33,11 +33,18 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
   -`back` → `$globalsearch` (global search + Playnite Fullscreen mode by long press)  
   -`start` → `$enter` (enter key)  
   -`LB` → `$section_back` (jump to the previous section)  
-  -`RB` → `$section_back` (jump to the next section)  
+  -`RB` → `$section_next` (jump to the next section)  
   -`LT` → `$tabjump_back` (jump to the previous panel of the current section)  
   -`RT` → `$tabjump_next` (jump to the next panel of the current section)  
   -*`(Left Stick Button)`* `LS` → `$explorerAndSlot_back` (toggle Playnite Explorer panel, or change slot by long press)  
   -*`(Right Stick Button)`* `RS` → `$filterAndSlot_next` (toggle Playnite Filter panel, or change slot by long press)
+- You can open `config.ini` and also edit manually several variables:
+  - Mouse settings (under [Mouse] section): `$sensitivity`, `$deadzone` and `$smoothfactor`.
+  - Reachable positions of sections and panels under ([Global] section):
+   - `$sectionNx`, `$sectionNy`. Indicates the 3 points reachable with `$section_back` and `$section_next` (`LB` and `RB` by default)  
+   - `$sectionNpanelx`, `$sectionNpanely`. Rechable points of the Explorer's Tab (if you are in the first zone) or the Zoom control bar (if you are in the second zone)  
+   - `$limit1`,`$limit2`. These variabiles are the horizontal points (axe) wich divide the screen in three zones. They are calculated in this manner: DesktopXRes/ChoosenMousePosition, rounded to the third decimal.
+  - $CurrentSlot, (under [Wizard] section) is automatically changed when you change slots with  `$explorerAndSlot_back` and `$filterAndSlot_next` and is used from the Wizard to save the points in the indicated slot. Each time GamepadDesktop starts is set to the first slot, but you can also set manually without running the GamepadDesktop (if for some reason you would do that)  
 
  
 
