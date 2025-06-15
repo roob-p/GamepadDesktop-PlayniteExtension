@@ -78,7 +78,7 @@ Here's a quick demo of how GamepadDesktop works:
 
 
 
-### 📺 Here's how the wizard works!:  
+### 🎛️ Here's how the wizard works!:  
 <table style="width: 100%; text-align: left;">
 <tr>
     <td style="padding: 0; vertical-align: top;">
