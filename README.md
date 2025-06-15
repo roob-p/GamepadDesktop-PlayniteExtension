@@ -46,6 +46,7 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
     - `$sectionNx`, `$sectionNy` → indicates the 3 points reachable with `$section_back` and `$section_next` *(`LB` and `RB` by default).*  
     - `$sectionNpanelx`, `$sectionNpanely` → reachable points of the Explorer's Tab (if you are in the first zone) or the Zoom control bar (if you are in the second zone).  
     - `$limit1`,`$limit2` → horizontal points which divide the screen in three zones. They are calculated in this manner: *DesktopXRes/ChosenMousePosition*, rounded to the third decimal.
+    - `$CurrentSlot` *(`[Wizard]` section)* → modified when you change slot with controller. Used by the wizard to save the points. You can modified it and run the Wizard without the GamepadDesktop running.
 
  
 
@@ -53,7 +54,7 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
 - Please, make sure to maximize Playnite. It's required for the extension to work properly.   
 - On each start, the script loads reachable points from the first slot, under `[Global]` section. You can also edit them directly open the `config.ini` manually or by using the corresponding menu option.. `[Global.slot2]` and `[Global.slot3]` contains the points of the other slots.
 - The extension uses the window title of Playnite's Global Search to interact with it. Since this varies by language, only the most common cases are supported. If you encounter issues, please open an issue and specify your language. In the meantime, switching Playnite to English is recommended as a temporary workaround.
-- `$CurrentSlot` *(`[Wizard]` section)* is automatically modified when you change slots with  `$explorerAndSlot_back` and `$filterAndSlot_next` and is used by the Wizard to save the points in the indicated slot. Each time GamepadDesktop starts is set to the first slot, but you can also edit manually (if for some reason you want to do that) and launch the Wizard without running the GamepadDesktop.
+- `$CurrentSlot` *(`[Wizard]` section)* is automatically modified when you change slots with  `$explorerAndSlot_back` and `$filterAndSlot_next` and is used by the Wizard to save the points in the indicated slot. Each time `GamepadDesktop` starts is set to the first slot, but you can also edit manually (if for some reason you want to do that) and launch the `GamepadDesktop-Wizard` without running the `GamepadDesktop`.
 
   </br>
 
