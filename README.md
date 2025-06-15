@@ -41,10 +41,10 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
 - You can open `config.ini` and also edit manually several variables:
   - Mouse settings (under [Mouse] section): `$sensitivity`, `$deadzone` and `$smoothfactor`.
   - Reachable positions of sections and panels under ([Global] section):
-   - `$sectionNx`, `$sectionNy`. Indicates the 3 points reachable with `$section_back` and `$section_next` (`LB` and `RB` by default)  
-   - `$sectionNpanelx`, `$sectionNpanely`. Rechable points of the Explorer's Tab (if you are in the first zone) or the Zoom control bar (if you are in the second zone)  
-   - `$limit1`,`$limit2`. These variabiles are the horizontal points (axe) wich divide the screen in three zones. They are calculated in this manner: DesktopXRes/ChoosenMousePosition, rounded to the third decimal.
-  - $CurrentSlot, (under [Wizard] section) is automatically changed when you change slots with  `$explorerAndSlot_back` and `$filterAndSlot_next` and is used from the Wizard to save the points in the indicated slot. Each time GamepadDesktop starts is set to the first slot, but you can also set manually without running the GamepadDesktop (if for some reason you would do that)  
+   - `$sectionNx`, `$sectionNy`. Indicates the 3 points reachable with `$section_back` and `$section_next` (`LB` and `RB` by default).  
+   - `$sectionNpanelx`, `$sectionNpanely`. Reachable points of the Explorer's Tab (if you are in the first zone) or the Zoom control bar (if you are in the second zone).  
+   - `$limit1`,`$limit2`. These variables are the horizontal points (axis) which divide the screen in three zones. They are calculated in this manner: DesktopXRes/ChoosenMousePosition, rounded to the third decimal.
+  - $CurrentSlot, (under [Wizard] section) is automatically changed when you change slots with  `$explorerAndSlot_back` and `$filterAndSlot_next` and is used by the Wizard to save the points in the indicated slot. Each time GamepadDesktop starts is set to the first slot, but you can also set manually without running the GamepadDesktop (f for some reason you want to do that manually).  
 
  
 
