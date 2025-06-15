@@ -78,11 +78,11 @@ Here's a quick demo of how GamepadDesktop works:
 
 
 
-### 🎛️ Here's how the wizard works!:  
+### 🛠️ Here's how the wizard works!:  
 <table style="width: 100%; text-align: left;">
 <tr>
     <td style="padding: 0; vertical-align: top;">
-      <img src="https://github.com/roob-p/GamepadDesktop-PlayniteExtension/blob/main/media/1.gif" style="width: 100%; height: auto;" />
+      <img src="https://github.com/roob-p/GamepadDesktop-PlayniteExtension/blob/main/media/3.gif" style="width: 100%; height: auto;" />
     </td>
  </tr>
  </table>
