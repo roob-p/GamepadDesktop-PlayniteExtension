@@ -4,7 +4,7 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
 ✨ This extension lets you use your gamepad with Playnite Desktop, allowing you to control various functions (mouse, scrollbars, Playnite shortcuts) and reach specific sections and panels through customizable positions. A virtual keyboard, to interact with fields, search and global search panels, is included.  
  
 ## 🚀 Functionality:
-- Common actions are mapped to every button and axes: mouse movement, scrollbars and functions shortcuts.
+- Common actions are mapped to every button and axes: mouse movement, scrollbars and function shortcuts.
 - Integrated onscreen keyboard controlled via Xinput.
 - Visual wizard to easily set the reachable points of sections and panels.
 - Three customizable slots for reachable points, quickly switchable with a button press
@@ -19,13 +19,13 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
 - The extension divides the screen into "sections" that can be reached by pressing buttons (*for default:* `LB` *and* `RB`). It also allows access to specific panels and can launch Playnite functions via shortcuts.
 - Use the `GamepadDesktop-Wizard` to edit panel and section positions: simply place the mouse over the indicated points and wait a few seconds. The Wizard saves the positions of the current slot. No restart required.
 - You can edit the controller layout by editing the `Keys` section in `config.ini`. Almost all buttons can be changed, with few exceptions:
-  - When the OSK is open, `tabjump_next` (`RT` *for default*) is used for left mouse click. `A` is used to press buttons on the OnScreen Keyboard *(this is the only funcion not configurable).*
+  - When the OSK is open, `tabjump_next` (`RT` *for default*) is used for left mouse click. `A` is used to press buttons on the OnScreen Keyboard *(this is the only non-configurable function).*
   - Change slot by long-pressing `$explorerAndSlot_back` (`LS` *by default*) and `$FilterAndSlot_next` (`RS` *by default*). Short-pressing toggles Playnite’s Explorer and Filter panels.
   - Long-press `$globalsearch` (`back` *by default*) to launch Playnite fullscreen; short-press it to open Global Search.
 - The default keys are:
   
   -*`(Left Stick)`* `LSX` → `$mousemovx` , `LSY` → `$mousemovy` (mouse movement)    
-  -*`(Right Stick)`* `RSY` → `$scroll` (bar scrollI)  
+  -*`(Right Stick)`* `RSY` → `$scroll` (scrollbars)  
   -`A` → `$mouseleft` (mouseleft click)  
   -`B` → `$mouseright` (mouseright click)  
   -`X` → `$osk` (open/close osk)  
@@ -43,7 +43,7 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
   - Reachable positions of sections and panels under ([Global] section):
    - `$sectionNx`, `$sectionNy`. Indicates the 3 points reachable with `$section_back` and `$section_next` (`LB` and `RB` by default).  
    - `$sectionNpanelx`, `$sectionNpanely`. Reachable points of the Explorer's Tab (if you are in the first zone) or the Zoom control bar (if you are in the second zone).  
-   - `$limit1`,`$limit2`. These variables are the horizontal points (axis) which divide the screen in three zones. They are calculated in this manner: DesktopXRes/ChoosenMousePosition, rounded to the third decimal.
+   - `$limit1`,`$limit2`. These variables are the horizontal points (axis) which divide the screen in three zones. They are calculated in this manner: DesktopXRes/ChosenMousePosition, rounded to the third decimal.
   - $CurrentSlot, (under [Wizard] section) is automatically changed when you change slots with  `$explorerAndSlot_back` and `$filterAndSlot_next` and is used by the Wizard to save the points in the indicated slot. Each time GamepadDesktop starts is set to the first slot, but you can also set manually without running the GamepadDesktop (f for some reason you want to do that manually).  
 
  
