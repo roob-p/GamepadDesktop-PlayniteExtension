@@ -60,8 +60,8 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
 - Each time `GamepadDesktop` starts, `$CurrentSlot` (under `[Wizard]`) is set to the first slot.
 
 ### 🎖️ Credits
-This gamepad script was written in AutoIt.  
-XInput support was added via the XInput UDF by Oxin8 (xoninx@gmail.com), a very short, but useful, AutoIt script found on the web that allows reading the XInput state.
+- This gamepad script was written in AutoIt.  
+- XInput support was added via the XInput UDF by Oxin8 (xoninx@gmail.com), a very short, but useful, AutoIt script found on the web that allows reading the XInput state.
 
 
   </br>
