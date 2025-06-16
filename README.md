@@ -57,7 +57,7 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
 - When Playnite is not focused, `GamepadDesktop` still allows control of the cursor and mouse buttons for 15 seconds. This period lets you interact with game launchers or clients (e.g., Steam, GOG) to install games. After that, the script enters idle mode. 
 - On each start, the script loads reachable points from the first slot, under `[Global]` section. You can also edit them directly open the `config.ini` manually or by using the corresponding menu option.. `[Global.slot2]` and `[Global.slot3]` contains the points of the other slots.
 - The extension uses the window title of Playnite's Global Search to interact with it. Since this varies by language, only the most common cases are supported. If you encounter issues, please open an issue and specify your language. In the meantime, switching Playnite to English is recommended as a temporary workaround.
-- Each time `GamepadDesktop` starts, `$CurrentSlot` *(under `[Wizard]`) is set to the first slot.
+- Each time `GamepadDesktop` starts, `$CurrentSlot` (under `[Wizard]`) is set to the first slot.
 
   </br>
 
