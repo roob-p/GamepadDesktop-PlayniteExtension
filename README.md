@@ -59,20 +59,14 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
 - The extension uses the window title of Playnite's Global Search to interact with it. Since this varies by language, only the most common cases are supported. If you encounter issues, please open an issue and specify your language. In the meantime, switching Playnite to English is recommended as a temporary workaround.
 - Each time `GamepadDesktop` starts, `$CurrentSlot` (under `[Wizard]`) is set to the first slot.
 
-### 🎖️ Credits
-This gamepad script was written in AutoIt.  
-XInput support was added via the XInput UDF by Oxin8 (xoninx@gmail.com), a very short, but useful, AutoIt script found on the web that allows reading the XInput state.
-
-
-  </br>
+<br>
 
 If you enjoy GamepadDesktop, you can buy me a coffee. It will be appreciated ;)
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/E1E214R1KB)
 
-- Install directly:
+<br>
 
-- Download last version:
 
 <!--![1](https://github.com/roob-p/GamepadDesktop-PlayniteExtension/blob/main/media/1.gif)!-->
 <!--[2](https://github.com/roob-p/GamepadDesktop-PlayniteExtension/blob/main/media/2.gif)!-->
@@ -106,6 +100,18 @@ Here's a quick demo of how GamepadDesktop works:
  </tr>
  </table>
 <!--![Wizard](https://github.com/roob-p/GamepadDesktop-PlayniteExtension/blob/main/media/3.gif)!-->
+
+
+
+### 🎖️ Credits
+This gamepad script was written in AutoIt.  
+XInput support was added via the XInput UDF by Oxin8 (xoninx@gmail.com), a very short, but useful, AutoIt script found on the web that allows reading the XInput state.
+
+
+- Install directly:
+
+- Download last version:
+
 
 
 
