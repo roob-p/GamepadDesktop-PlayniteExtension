@@ -58,7 +58,10 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
 
 ## ⚠️ Notes:
 - Please, make sure to maximize Playnite. It's required for the extension to work properly.
-- When Playnite is not focused, `GamepadDesktop` still allows control of the cursor and mouse buttons for 17 seconds. This period lets you interact with game launchers or clients (e.g., Steam, GOG) to install games. After that, the script enters idle mode. 
+<!-- - When Playnite is not focused, `GamepadDesktop` still allows control of the cursor and mouse buttons for 17 seconds. This period lets you interact with game launchers or clients (e.g., Steam, GOG) to install games. After that, the script enters idle mode.!--> 
+- When Playnite is not focused, `GamepadDesktop` still allows control of the cursor and mouse buttons for 17 seconds.
+This period is meant to let you interact with game launchers or clients *(e.g., Steam, GOG)* to install games. Please don't forget to click on `Playnite` once you're done.
+This period also serves as an "emergency" fallback in case the OS steals focus (e.g., due to a software update). After that time, the script enters idle mode.  
 - On each start, the script loads reachable points from the first slot, under `[Global]` section. You can also edit them directly open the `config.ini` manually or by using the corresponding menu option. `[Global.slot2]` and `[Global.slot3]` contains the points of the other slots.
 - The extension uses the window title of Playnite's Global Search to interact with it. Since this varies by language, only the most common cases are supported. If you encounter issues, please open an issue and specify your language. In the meantime, switching Playnite to English is recommended as a temporary workaround.
 - Each time `GamepadDesktop` starts, `$CurrentSlot` (under `[Wizard]`) is set to the first slot.
@@ -76,7 +79,7 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
 <!--[2](https://github.com/roob-p/GamepadDesktop-PlayniteExtension/blob/main/media/2.gif)!-->
 
 ### 📺 See it in action!
-**Here's a quick demo of how GamepadDesktop works:**
+🚀 **Here's a quick demo of how GamepadDesktop works!**
 <!--Here's a quick demo of how GamepadDesktop works:!-->
 
 <table style="width: 100%; text-align: left;">
@@ -111,12 +114,16 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
 This gamepad script was written in AutoIt.  
 XInput support was added via the XInput UDF by Oxin8 (xoninx@gmail.com), a very short, but useful, AutoIt script found on the web that allows reading the XInput state.
 
+<br>
 
 - Install directly:
 
 - Download last version:
 
 
+
+
+  
 
 
   
