@@ -38,7 +38,7 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
   -`RT` → `$tabjump_next` (jump to the next panel of the current section)  
   -*`(Left Stick Button)`* `LS` → `$explorerAndSlot_back` (toggle Playnite Explorer panel, or change slot by long press)  
   -*`(Right Stick Button)`* `RS` → `$filterAndSlot_next` (toggle Playnite Filter panel, or change slot by long press)  
-  -`D-pad`:`OSK closed` → select games when you're in second zone, or navigates panel elements when you're in the first and third zone.  
+  -`D-pad`:`OSK closed` → selects games in the second zone, or navigates UI components (fields, zoom controls, and elements of the Explorer and Filter panels) in the first or third zone.   
   -`D-pad`:`OSK open` → moves between buttons on the OnScreen Keyboard.
 
   
