@@ -72,7 +72,7 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
 <!--[2](https://github.com/roob-p/GamepadDesktop-PlayniteExtension/blob/main/media/2.gif)!-->
 
 ### 📺 See it in action!
-**Here's a quick demo of how GamepadDesktop works:**
+**Here's a quick demo of how GamepadDesktop works!**
 <!--Here's a quick demo of how GamepadDesktop works:!-->
 
 <table style="width: 100%; text-align: left;">
