@@ -42,8 +42,8 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
   -`RT` → `$tabjump_next` (jump to the next panel of the current section)  
   -*`(Left Stick Button)`* `LS` → `$explorerAndSlot_back` (toggle Playnite Explorer panel, or change slot by long press)  
   -*`(Right Stick Button)`* `RS` → `$filterAndSlot_next` (toggle Playnite Filter panel, or change slot by long press)  
-  -`D-pad` : `OSK closed` → select games when you're in second zone, or navigates panel elements when you're in the first and third zone.  
-  -`D-pad` : `OSK open` → moves between buttons on the OnScreen Keyboard.
+  -`D-pad`:`OSK closed` → selects games in the second zone, or navigates UI components (fields, zoom controls, and elements of the Explorer and Filter panels) in the first or third zone.   
+  -`D-pad`:`OSK open` → moves between buttons on the OnScreen Keyboard.
 
   
   #### You can open `config.ini` and also edit manually several variables:
@@ -57,26 +57,27 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
  
 
 ## ⚠️ Notes:
-- Please, make sure to maximize Playnite. It's required for the extension to work properly.   
-- On each start, the script loads reachable points from the first slot, under `[Global]` section. You can also edit them directly open the `config.ini` manually or by using the corresponding menu option.. `[Global.slot2]` and `[Global.slot3]` contains the points of the other slots.
+- Please, make sure to maximize Playnite. It's required for the extension to work properly.
+- When Playnite is not focused, `GamepadDesktop` still allows control of the cursor and mouse buttons for 17 seconds. This period lets you interact with game launchers or clients (e.g., Steam, GOG) to install games. After that, the script enters idle mode. 
+- On each start, the script loads reachable points from the first slot, under `[Global]` section. You can also edit them directly open the `config.ini` manually or by using the corresponding menu option. `[Global.slot2]` and `[Global.slot3]` contains the points of the other slots.
 - The extension uses the window title of Playnite's Global Search to interact with it. Since this varies by language, only the most common cases are supported. If you encounter issues, please open an issue and specify your language. In the meantime, switching Playnite to English is recommended as a temporary workaround.
-- Each time `GamepadDesktop` starts, `$CurrentSlot` *(under `[Wizard]`) is set to the first slot.
+- Each time `GamepadDesktop` starts, `$CurrentSlot` (under `[Wizard]`) is set to the first slot.
 
-  </br>
+<br>
 
 If you enjoy GamepadDesktop, you can buy me a coffee. It will be appreciated ;)
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/E1E214R1KB)
 
-- Install directly:
+<br>
 
-- Download last version:
 
 <!--![1](https://github.com/roob-p/GamepadDesktop-PlayniteExtension/blob/main/media/1.gif)!-->
 <!--[2](https://github.com/roob-p/GamepadDesktop-PlayniteExtension/blob/main/media/2.gif)!-->
 
 ### 📺 See it in action!
 Here's a quick demo of how GamepadDesktop works:
+<!--Here's a quick demo of how GamepadDesktop works:!-->
 
 <table style="width: 100%; text-align: left;">
   <tr>
@@ -103,6 +104,23 @@ Here's a quick demo of how GamepadDesktop works:
  </tr>
  </table>
 <!--![Wizard](https://github.com/roob-p/GamepadDesktop-PlayniteExtension/blob/main/media/3.gif)!-->
+
+
+
+### 🎖️ Credits
+This gamepad script was written in AutoIt.  
+XInput support was added via the XInput UDF by Oxin8 (xoninx@gmail.com), a very short, but useful, AutoIt script found on the web that allows reading the XInput state.
+
+
+- Install directly:
+
+- Download last version:
+
+
+
+
+  
+
 
 
 
