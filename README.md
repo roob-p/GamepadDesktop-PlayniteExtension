@@ -72,7 +72,7 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
 <!--[2](https://github.com/roob-p/GamepadDesktop-PlayniteExtension/blob/main/media/2.gif)!-->
 
 ### 📺 See it in action!
-**Here's a quick demo of how GamepadDesktop works!**
+** 🚀 Here's a quick demo of how GamepadDesktop works!**
 <!--Here's a quick demo of how GamepadDesktop works:!-->
 
 <table style="width: 100%; text-align: left;">
@@ -107,6 +107,7 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
 This gamepad script was written in AutoIt.  
 XInput support was added via the XInput UDF by Oxin8 (xoninx@gmail.com), a very short, but useful, AutoIt script found on the web that allows reading the XInput state.
 
+<br>
 
 - Install directly:
 
