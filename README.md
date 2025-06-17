@@ -50,13 +50,15 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
     - `$limit1`,`$limit2` → horizontal points which divide the screen in three zones. They are calculated in this manner: *DesktopXRes/ChosenMousePosition*, rounded to the third decimal.
     - `$CurrentSlot` *(`[Wizard]` section)* → modified when you change slot with controller. Used by the wizard to save the points. You can modified it and run the `wizard` also without `GamepadDesktop` running.
 
+  ### 🔄 Autorun  
+- You can set `Autorun = 1` in `autorun.ini` (also possible by clicking the Playnite context menu) to automatically start `GamepadDesktop` when `Playnite` launches.
  
 
 ## ⚠️ Notes:
 - Please, make sure to maximize Playnite. It's required for the extension to work properly.
 <!-- - When Playnite is not focused, `GamepadDesktop` still allows control of the cursor and mouse buttons for 17 seconds. This period lets you interact with game launchers or clients (e.g., Steam, GOG) to install games. After that, the script enters idle mode.!--> 
 - When Playnite is not focused, `GamepadDesktop` still allows control of the mouse for 17 seconds, useful for interacting with game clients (e.g., Steam, GOG) or recovering from OS popups.
-After that, the script goes idle until Playnite is focused again.  
+After that, the script goes idle until Playnite is focused again, so remember to click back on Playnite when you're done.  
 
 - On each start, the script loads reachable points from the first slot, under `[Global]` section. You can also edit them directly open the `config.ini` manually or by using the corresponding menu option. `[Global.slot2]` and `[Global.slot3]` contains the points of the other slots.
 - The extension uses the window title of Playnite's Global Search to interact with it. Since this varies by language, only the most common cases are supported. If you encounter issues, please open an issue and specify your language. In the meantime, switching Playnite to English is recommended as a temporary workaround.
