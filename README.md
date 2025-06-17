@@ -42,7 +42,7 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
   -`D-pad`:`OSK open` → moves between buttons on the OnScreen Keyboard.
 
   
-  #### You can open `config.ini` and also edit manually several variables:
+  #### 📄 You can open `config.ini` and also edit manually several variables:
   - Mouse settings: `$sensitivity`, `$deadzone` and `$smoothfactor` *(`[Mouse]` section):*
   - Reachable positions of sections and panels *(`[Global]` section):*
     - `$sectionNx`, `$sectionNy` → indicates the 3 points reachable with `$section_back` and `$section_next` *(`LB` and `RB` by default).*  
@@ -50,7 +50,7 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
     - `$limit1`,`$limit2` → horizontal points which divide the screen in three zones. They are calculated in this manner: *DesktopXRes/ChosenMousePosition*, rounded to the third decimal.
     - `$CurrentSlot` *(`[Wizard]` section)* → modified when you change slot with controller. Used by the wizard to save the points. You can modified it and run the `wizard` also without `GamepadDesktop` running.
 
-  ### 🔄 Autorun  
+  ### 🔄 Autorun:  
 - You can set `Autorun = 1` in `autorun.ini` (also possible by clicking the Playnite context menu) to automatically start `GamepadDesktop` when `Playnite` launches.
  
 
