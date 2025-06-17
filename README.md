@@ -51,7 +51,7 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
     - `$CurrentSlot` *(`[Wizard]` section)* → modified when you change slot with controller. Used by the wizard to save the points. You can modified it and run the `wizard` also without `GamepadDesktop` running.
 
   ### 🔄 Autorun:  
-- You can set `Autorun = 1` in `autorun.ini` (also possible by clicking the Playnite context menu) to automatically start `GamepadDesktop` when `Playnite` launches.
+- You can set `Autorun = 1` in `autorun.ini` (also possible by clicking the `Playnite` context menu) to automatically start `GamepadDesktop` when `Playnite` launches.
  
 
 ## ⚠️ Notes:
