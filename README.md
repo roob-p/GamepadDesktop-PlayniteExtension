@@ -111,7 +111,7 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
 
 ### 🎖️ Credits
 This gamepad script was written in AutoIt.  
-XInput support was added via the XInput UDF by Oxin8 (xoninx@gmail.com), a very short, but useful, AutoIt script found on the web that allows reading the XInput state.
+XInput support was added via the XInput UDF by Oxin8 (xoninx@gmail.com), a short, but useful, AutoIt script found on the web that allows reading the XInput state.
 
 <br>
 
