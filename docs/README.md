@@ -69,7 +69,7 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
 - When Playnite is not focused, `GamepadDesktop` still allows mouse control (movement, right click, and left click via both `$mouseleft` and `$tabjump_next`) for the duration set by `$time`. This lets you interact with other windows or recover if the OS steals focus. Please remember to click back on `Playnite` after interacting with any prompted clients or launchers. After this period, the script goes idle until `Playnite` regains focus.
 - The extension uses the window title of Playnite's Global Search to interact with it. Since this varies by language, only the most common cases are supported. If you encounter issues, please open an issue and specify your language. In the meantime, switching Playnite to English is recommended as a temporary workaround.
 - Each time `GamepadDesktop` starts, `$CurrentSlot` *(under `[Wizard]`)* is set to the first slot.
-- On each start, the script loads reachable points from the first slot, under `[Global]` section. You can also edit them directly open the `config.ini` manually or by using the corresponding menu option. `[Global.slot2]` and `[Global.slot3]` contains the points of the other slots.
+- On each start, the script loads reachable points from the first slot, under `[Global]` section. You can also edit them directly by opening the `config.ini` manually or by using the corresponding menu option. `[Global.slot2]` and `[Global.slot3]` contains the points of the other slots.
 
 <br>
 
@@ -124,4 +124,4 @@ XInput support was added via the XInput UDF by Oxin8 (xoninx@gmail.com), a short
 - Install directly:
   [GamepadDesktop](https://playnite.link/addons.html#GamepadDesktop)
 - Download last version:
-[v1.0.1]( https://github.com/roob-p/GamepadDesktop-PlayniteExtension/releases/download/v1.0.1/GamepadDesktop_v1.0.1.pext)
+[v1.0.2]( https://github.com/roob-p/GamepadDesktop-PlayniteExtension/releases/download/v1.0.2/GamepadDesktop_v1.0.2.pext)
