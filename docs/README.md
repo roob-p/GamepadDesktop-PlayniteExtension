@@ -88,12 +88,12 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
 <table style="width: 100%; text-align: left;">
   <tr>
     <td style="padding: 0; vertical-align: top;">
-      <img src="https://github.com/roob-p/GamepadDesktop-PlayniteExtension/blob/main/media/1.gif" style="width: 100%; height: auto;" />
+      <img src="https://raw.githubusercontent.com/roob-p/GamepadDesktop-PlayniteExtension/main/media/1.gif" style="width: 100%; height: auto;" />
     </td>
   </tr>
    <tr>
     <td style="padding: 0; vertical-align: top;">
-      <img src="https://github.com/roob-p/GamepadDesktop-PlayniteExtension/blob/main/media/2.gif" style="width: 100%; height: auto;" />
+      <img src="https://raw.githubusercontent.com/roob-p/GamepadDesktop-PlayniteExtension/main/media/2.gif" style="width: 100%; height: auto;" />
          </td>
   </tr>
 </table>
@@ -105,7 +105,7 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
 <table style="width: 100%; text-align: left;">
 <tr>
     <td style="padding: 0; vertical-align: top;">
-      <img src="https://github.com/roob-p/GamepadDesktop-PlayniteExtension/blob/main/media/3.gif" style="width: 100%; height: auto;" />
+      <img src="https://raw.githubusercontent.com/roob-p/GamepadDesktop-PlayniteExtension/main/media/3.gif" style="width: 100%; height: auto;" />
     </td>
  </tr>
  </table>
