@@ -17,7 +17,7 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
 - Playnite menu integration showing program status and quick actions (run/stop, config edit, launch Wizard).
 - Support for different resolutions and auto-scaling onscreen keyboard.
 
-
+ 
 
 ## ⚙️ How it works:
 - The extension divides the screen into "sections" that can be reached by pressing buttons (*for default:* `LB` *and* `RB`). It also allows access to specific panels and can launch Playnite functions via shortcuts.
