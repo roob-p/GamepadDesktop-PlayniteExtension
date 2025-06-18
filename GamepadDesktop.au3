@@ -1,14 +1,15 @@
 #Region ;**** Directives created by AutoIt3Wrapper_GUI ****
 #AutoIt3Wrapper_Icon=iconW.ico
+#AutoIt3Wrapper_Outfile=GamepadDesktop.exe
 #AutoIt3Wrapper_UseX64=n
-#AutoIt3Wrapper_Res_Fileversion=1.0.1
+#AutoIt3Wrapper_Res_Description=GamepadDesktop
+#AutoIt3Wrapper_Res_Fileversion=1.0.2.0
 #AutoIt3Wrapper_Res_ProductName=GamepadDesktop (Playnite-Extension)
-#AutoIt3Wrapper_Res_ProductVersion=1.0.1
+#AutoIt3Wrapper_Res_ProductVersion=1.0.2
 #AutoIt3Wrapper_Res_CompanyName=roob-p (author)
 #AutoIt3Wrapper_Res_LegalCopyright=roob-p (author)
 #AutoIt3Wrapper_Res_LegalTradeMarks=roob-p (author)
 #AutoIt3Wrapper_Res_Language=1040
-#AutoIt3Wrapper_Res_Description=GamepadDesktop
 #EndRegion ;**** Directives created by AutoIt3Wrapper_GUI ****
 #include <_XInput.au3>
 #include <AutoItConstants.au3>
@@ -80,17 +81,24 @@ Global $explorer_pressed = False
 Global $filter_pressed = False
 Global $osknotpressed = True
 GLobal $oskpressed= False
+Global $search_pressed=False
 
-Global $SpressedTime = 0
-Global $SisPressing = False
+Global $sb_pressed1= False
+Global $sn_pressed1=False
+Global $sb_pressed2= False
+Global $sn_pressed2=False
 
-Global $sgsPressedTime = 0
-Global $sgsIsPressing = False
 
-Global $LSIsPressing = False
-Global $RSIsPressing = False
-Global $LSPressedTime = 0
-Global $RSPressedTime = 0
+Global $GSpressedTime = 0
+Global $GSisPressing = False
+
+Global $SGSPressedTime = 0
+Global $SGSIsPressing = False
+
+;Global $LSIsPressing = False
+;Global $RSIsPressing = False
+;Global $LSPressedTime = 0
+;Global $RSPressedTime = 0
 
 Global $explorerIsPressing = False
 Global $explorerPressedTime = 0
@@ -110,6 +118,7 @@ Global $scrolldiv = 4000
 
 
 $time=0
+$sleepIdleTime=600
 
 $timer=0
 $timercheck=0
@@ -217,6 +226,7 @@ $limit1=Iniread($inifile,"Global","$limit1","")
 $limit2=Iniread($inifile,"Global","$limit2","")
 
 $time=Iniread($inifile,"Global","$time","")
+$sleepIdleTime=Iniread($inifile,"Global","$sleepIdleTime","")
 
 
 
@@ -323,7 +333,7 @@ While 1
 $timerfps=Timerinit()
 
 
-buttons()
+;buttons()
 ;mouse()
 
 
@@ -401,7 +411,7 @@ $timerlostact=False
 ;	senderM($msg)
 ;endif
 
-;buttons()
+buttons()
 pos()
 mouse()
 sender()
@@ -473,28 +483,34 @@ EndIf
 
 
 if bv($search) then
+	if not $search_pressed then
 	if $showosk=True then
             MouseClick("left",$search_panelx,$search_panely,1,0)
+			$search_pressed=True
 			else
 			$showosk=True
 			guisetstate(@SW_SHOW)
 			WinActivate("Playnite")
 			MouseClick("left",$search_panelx,$search_panely,1,0)
+			$search_pressed=True
+			endif
 	endif
+	Else
+	$search_pressed=False
 endif
 
 
 
 
 If bv($globalsearch) Then
-    If Not $SisPressing Then
-        $SpressedTime = TimerInit()
-        $SisPressing = True
+    If Not $GSisPressing Then
+        $GSpressedTime = TimerInit()
+        $GSisPressing = True
     EndIf
 Else
-    If $SisPressing Then
-        Local $Sduration = TimerDiff($SpressedTime)
-        $SisPressing = False
+    If $GSisPressing Then
+        Local $Sduration = TimerDiff($GSpressedTime)
+        $GSisPressing = False
 
         If $Sduration < 1000 Then
 
@@ -516,16 +532,16 @@ EndIf
 
 ;unused, for now
 If bv($standglob_search) Then
-    If Not $sgsIsPressing Then
-        $sgsPressedTime = TimerInit()
-        $sgsIsPressing = True
+    If Not $SGSIsPressing Then
+        $SGSPressedTime = TimerInit()
+        $SGSIsPressing = True
     EndIf
 Else
-    If $sgsIsPressing Then
-        Local $sgsDuration = TimerDiff($SpressedTime)
-        $sgsIsPressing = False
+    If $SGSIsPressing Then
+        Local $SGSDuration = TimerDiff($SGSpressedTime)
+        $SGSIsPressing = False
 
-        If $sgsDuration < 1000 Then
+        If $SGSDuration < 1000 Then
             MouseClick("left",$search_panelx,$search_panely,1,0)
         Else
 			send("^f")
@@ -581,33 +597,52 @@ $chain=0
 
 ;sections
 if bv($section_back) and $pos<=2 then
+	If Not $sb_pressed1 Then
 	MouseClick("left",$section1x,$section1y,1,10)
 	$pos=1
+	$sb_pressed1=True
+	endif
+Else
+    $sb_pressed1 = False
 endif
+
 if bv($section_back) and $pos=3 then
+	If Not $sb_pressed2 Then
 	MouseClick("left",$section2x+10,$section2y,1,10)
 	MouseClick("left",$section2x,$section2y,1,11)
 	;MouseClick("left",$section2x-1,$section2y,1,0)
 	$pos=2
-
+	$sb_pressed2=True
+	endif
+Else
+    $sb_pressed2 = False
 endif
 
 
-    if bv($section_next) and $pos=1 then
+if bv($section_next) and $pos=1 then
+	If Not $sn_pressed1 Then
 	MouseClick("left",$section2x,$section2y,1,10)
 	$pos=2
 	$mouseposx=mousegetpos(0)
 	$mouseposy=mousegetpos(1)
 	$chain=1
+	$sn_pressed1=True
+	endif
+Else
+    $sn_pressed1 = False
+endif
 
 ;endif
 
-
-
-	elseif bv($section_next) and $pos>=2 then
+if bv($section_next) and $pos>=2 then
+	If Not $sn_pressed2 Then
 	MouseClick("left",$section3x,$section3y,1,10)
 	$pos=3
+	$sn_pressed2=True
 	endif
+Else
+    $sn_pressed2 = False
+endif
 
 
 
@@ -706,6 +741,7 @@ Local $sClass2 = _WinAPI_GetClassName($hWnd2)
 	if not StringInStr($sClass2,"Playnite.Fullscreen") then
 		;$timerleftpress2=timerinit()
 		$timerleftpress=TimerInit()
+	buttons()
 	mouse()
 	_Handlemouse(bv($mouseleft),0)
 	_Handlemouse(bv($mouseright),1)
@@ -716,7 +752,7 @@ Local $sClass2 = _WinAPI_GetClassName($hWnd2)
 else
 
 
-    Sleep(250)
+    Sleep($sleepIdleTime)
 endif
 
 
@@ -1025,6 +1061,8 @@ Func Clip($value, $min, $max)
         Return $value
     EndIf
 EndFunc
+
+
 
 
 
