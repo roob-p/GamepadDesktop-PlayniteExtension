@@ -111,7 +111,7 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
  </table>
 <!--![Wizard](https://github.com/roob-p/GamepadDesktop-PlayniteExtension/blob/main/media/3.gif)!-->
 
-
+- License: [License.md](https://github.com/roob-p/GamepadDesktop-PlayniteExtension/edit/main/LICENSE.md)
 
 ### 🎖️ Credits
 This gamepad script was written in AutoIt.  
