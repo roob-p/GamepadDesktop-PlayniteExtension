@@ -50,7 +50,7 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
   - Mouse settings: `$sensitivity`, `$deadzone` and `$smoothfactor` *(`[Mouse]` section):*
   - Reachable positions of sections and panels *(`[Global]` section):*
     - `$sectionNx`, `$sectionNy` → indicates the 3 points reachable with `$section_back` and `$section_next` *(`LB` and `RB` by default).*  
-    - `$sectionNpanelx`, `$sectionNpanely` → reachable points of the `Explorer's Tab` (if you are in the first zone) or the `Zoom control bar ` (if you are in the second zone).  
+    - `$sectionNpanelx`, `$sectionNpanely` → reachable points of the `Explorer's Tab` (if you are in the first zone) or the `Zoom control bar` (if you are in the second zone).  
     - `$limit1`,`$limit2` → horizontal points which divide the screen in three zones. They are calculated in this manner: *DesktopXRes/ChosenMousePosition*, rounded to the third decimal.
     - `$CurrentSlot` *(`[Wizard]` section)* → modified when you change slot with controller. Used by the wizard to save the points. You can modified it and run the `wizard` also without `GamepadDesktop` running.
   - `$time` → duration *(in seconds)* for which `GamepadDesktop` continues to allow mouse control after `Playnite` loses focus. Useful for interacting with game clients (e.g., `Steam, GOG`) to install games, or recovering if OS steals focus (e.g., popups, updates). You can customize this value in the `[Global]` section *(default 17s).*
