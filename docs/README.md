@@ -11,16 +11,16 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
 - Common actions are mapped to every button and axes: mouse movement, scrollbars and function shortcuts.
 - Integrated onscreen keyboard controlled via Xinput.
 - Visual wizard to easily set the reachable points of sections and panels.
-- Three customizable slots for reachable points, quickly switchable with a button press
+- Three customizable slots for reachable points, quickly switchable with a button press.
 - Customizable button mapping.
 - Support for autorun when Playnite starts. The script goes idle when Playnite is not focused.
 - Playnite menu integration showing program status and quick actions (run/stop, config edit, launch Wizard).
 - Support for different resolutions and auto-scaling onscreen keyboard.
 
- 
+   
 
 ## ⚙️ How it works:
-- The extension divides the screen into "sections" that can be reached by pressing buttons (*for default:* `LB` *and* `RB`). It also allows access to specific panels and can launch Playnite functions via shortcuts.
+- The extension divides the screen into "zones" that can be reached by pressing buttons (*for default:* `LB` *and* `RB`). It also allows access to specific panels and can launch Playnite functions via shortcuts.
 - Use the `GamepadDesktop-Wizard` to edit panel and section positions: simply place the mouse over the indicated points and wait a few seconds. The Wizard saves the positions of the current slot. No restart required.
 - You can edit the controller layout by editing the `Keys` section in `config.ini`. Almost all buttons can be changed, with few exceptions:
   - When the OSK is open, `tabjump_next` *(`RT` for default)* is used for left mouse click. `A` is used to press buttons on the OnScreen Keyboard *(this is the only non-configurable function).*
@@ -50,7 +50,7 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
   - Mouse settings: `$sensitivity`, `$deadzone` and `$smoothfactor` *(`[Mouse]` section):*
   - Reachable positions of sections and panels *(`[Global]` section):*
     - `$sectionNx`, `$sectionNy` → indicates the 3 points reachable with `$section_back` and `$section_next` *(`LB` and `RB` by default).*  
-    - `$sectionNpanelx`, `$sectionNpanely` → reachable points of the Explorer's Tab (if you are in the first zone) or the Zoom control bar (if you are in the second zone).  
+    - `$sectionNpanelx`, `$sectionNpanely` → reachable points of the `Explorer`'s Tab (if you are in the first zone) or the `Zoom control bar ` (if you are in the second zone).  
     - `$limit1`,`$limit2` → horizontal points which divide the screen in three zones. They are calculated in this manner: *DesktopXRes/ChosenMousePosition*, rounded to the third decimal.
     - `$CurrentSlot` *(`[Wizard]` section)* → modified when you change slot with controller. Used by the wizard to save the points. You can modified it and run the `wizard` also without `GamepadDesktop` running.
   - `$time` → duration *(in seconds)* for which `GamepadDesktop` continues to allow mouse control after `Playnite` loses focus. Useful for interacting with game clients (e.g., `Steam, GOG`) to install games, or recovering if OS steals focus (e.g., popups, updates). You can customize this value in the `[Global]` section *(default 17s).*
