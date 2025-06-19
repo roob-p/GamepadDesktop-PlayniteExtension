@@ -44,6 +44,12 @@ $timertemp=0
 Opt("MouseCoordMode",1)
 
 
+$idle=False
+
+HotKeySet("^!+9", "ToggleIdle") ; Ctrl + Alt + Shift + 9
+
+
+
 $hWndd=0
 $nstring=0
 
@@ -320,9 +326,12 @@ $explorer=IniRead($inifile,"Keys","$explorerAndSlot_back","")
 $confirm="A"
 $standglob_search=""
 
+$adlibACT=True
+
 
 AdlibRegister(mouseBenteract,100)
-AdlibRegister(wizardcheck,250)
+AdlibRegister(wizardcheck,600)
+AdlibRegister(PlayniteExists,$sleepIdleTime)
 ;AdlibRegister(PlayniteIsActive,250)
 
 
@@ -404,6 +413,7 @@ func main()
 If PlayniteIsActive() Then
 ;$hasfocus=True ;useless
 $timerlostact=False
+$idle=False
 
 
 ;local $msg=GUIGetMsg()
@@ -455,6 +465,14 @@ $repeatSpeed = 10
 
 
 	endif
+
+
+if $adlibACT=False then
+AdlibRegister(mouseBenteract,100)
+AdlibRegister(wizardcheck,600)
+$adlibACT=True
+endif
+
 
 
 
@@ -728,7 +746,7 @@ Else; PlayniteIsActive False:
 	$showosk = False
 	EndIf
 
-if timerdiff($timerlost)<$time*1000 then
+if timerdiff($timerlost)<$time*1000 and $idle=False then
 Local $hWnd2 = WinGetHandle("[ACTIVE]")
 Local $sClass2 = _WinAPI_GetClassName($hWnd2)
 
@@ -750,6 +768,10 @@ Local $sClass2 = _WinAPI_GetClassName($hWnd2)
 
 	endif
 else
+	AdlibUnRegister(mouseBenteract)
+	AdlibUnRegister(wizardcheck)
+	;AdlibUnRegister(PlayniteExists)
+	$adlibACT=False
 
 
     Sleep($sleepIdleTime)
@@ -776,7 +798,13 @@ func wizardcheck()
 	EndIf
 	endif
 
-	EndFunc
+EndFunc
+
+func PlayniteExists()
+	if not ProcessExists("Playnite.DesktopApp.exe") then
+		exit
+	endif
+endfunc
 
 
 func reload()
@@ -911,6 +939,12 @@ else
 
 	endfunc
 
+
+
+func ToggleIdle()
+	;exit
+	$idle=True
+	endfunc
 
 
 Func ScrollWheel1($value, $deadZone)
