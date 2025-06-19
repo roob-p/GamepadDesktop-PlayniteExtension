@@ -63,8 +63,8 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
 - **The script will automatically exit when `Playnite` is closed.**
 However, make sure `GamepadDesktop` is not running before updating it.
 - You can force `GamepadDesktop` to enter idle mode (no mouse control, no other functions) by pressing `Ctrl + Alt + Shift + 9.`
-If you want to automatically enter idle mode when a game is started, add the following script to **(Global) Scripts → Game scripts → Execute after a game is started" in Playnite:**  
-<pre style="margin:0; padding:2px 6px; background:#f4f4f4; border:0px solid #ccc;"><code>
+If you want to automatically enter idle mode when a game is started, add the following script to **(Global) Scripts → Game scripts → Execute after a game is started" in Playnite:**
+<pre style="margin:0; padding:0px 0px; background:#f4f4f4; border:0px solid #ccc;"><code>
 Add-Type -AssemblyName System.Windows.Forms
 Start-Sleep -Milliseconds 500
 [System.Windows.Forms.SendKeys]::SendWait("^%+9")
