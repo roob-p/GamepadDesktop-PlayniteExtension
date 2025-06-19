@@ -7,7 +7,7 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
 - Common actions are mapped to every button and axes: mouse movement, scrollbars and function shortcuts.
 - Integrated onscreen keyboard controlled via Xinput.
 - Visual wizard to easily set the reachable points of sections and panels.
-- Three customizable slots for reachable points, quickly switchable with a button press
+- Three customizable slots for reachable points, quickly switchable with a button press.
 - Customizable button mapping.
 - Support for autorun when Playnite starts. The script goes idle when Playnite is not focused.
 - Playnite menu integration showing program status and quick actions (run/stop, config edit, launch Wizard).
