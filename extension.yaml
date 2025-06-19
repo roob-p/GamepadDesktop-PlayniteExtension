@@ -1,7 +1,7 @@
 ﻿Id: GamepadDesktop
 Name: GamepadDesktop
 Author: roob-p
-Version: 1.0.2
+Version: 1.0.3
 Module: GamepadDesktop.psm1
 Type: Script
 Icon: iconW.png
