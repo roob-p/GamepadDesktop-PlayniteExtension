@@ -62,6 +62,8 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
 - **Please make sure to maximize Playnite. It's required for the extension to work properly.**
 - **The script will automatically exit when `Playnite` is closed.**
 However, make sure `GamepadDesktop` is not running before updating it.
+<!-- - When Playnite is not focused, `GamepadDesktop` still allows control of the cursor and mouse buttons for 17 seconds. This period lets you interact with game launchers or clients (e.g., Steam, GOG) to install games. After that, the script enters idle mode.!-->
+- When Playnite is not focused, `GamepadDesktop` still allows mouse control (movement, right click, and left click via both `$mouseleft` and `$tabjump_next`) for the duration set by `$time`. This lets you interact with other windows or recover if the OS steals focus. Please remember to click back on `Playnite` after interacting with any prompted clients or launchers. After this period, the script goes idle until `Playnite` regains focus.
 - You can force `GamepadDesktop` to enter idle mode (no mouse control, no other functions) by pressing `Ctrl + Alt + Shift + 9.`
 If you want to automatically enter idle mode when a game is started, add the following script to **(Global) Scripts → Game scripts → Execute after a game is started" in Playnite:**
 <pre style="margin:0; padding:0px 0px; background:#f4f4f4; border:0px solid #ccc;"><code>
@@ -69,8 +71,6 @@ Add-Type -AssemblyName System.Windows.Forms
 Start-Sleep -Milliseconds 500
 [System.Windows.Forms.SendKeys]::SendWait("^%+9")
 </code></pre>
-<!-- - When Playnite is not focused, `GamepadDesktop` still allows control of the cursor and mouse buttons for 17 seconds. This period lets you interact with game launchers or clients (e.g., Steam, GOG) to install games. After that, the script enters idle mode.!-->
-- When Playnite is not focused, `GamepadDesktop` still allows mouse control (movement, right click, and left click via both `$mouseleft` and `$tabjump_next`) for the duration set by `$time`. This lets you interact with other windows or recover if the OS steals focus. Please remember to click back on `Playnite` after interacting with any prompted clients or launchers. After this period, the script goes idle until `Playnite` regains focus.
 - The extension uses the window title of Playnite's Global Search to interact with it. Since this varies by language, only the most common cases are supported. If you encounter issues, please open an issue and specify your language. In the meantime, switching Playnite to English is recommended as a temporary workaround.
 - Each time `GamepadDesktop` starts, `$CurrentSlot` *(under `[Wizard]`)* is set to the first slot.
 - On each start, the script loads reachable points from the first slot, under `[Global]` section. You can also edit them directly by opening the `config.ini` manually or by using the corresponding menu option. `[Global.slot2]` and `[Global.slot3]` contains the points of the other slots.
