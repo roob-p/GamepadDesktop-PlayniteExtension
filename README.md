@@ -66,13 +66,11 @@ However, make sure `GamepadDesktop` is not running before updating it.
 - When Playnite is not focused, `GamepadDesktop` still allows mouse control (movement, right click, and left click via both `$mouseleft` and `$tabjump_next`) for the duration set by `$time`. This lets you interact with other windows or recover if the OS steals focus. Please remember to click back on `Playnite` after interacting with any prompted clients or launchers. After this period, the script goes idle until `Playnite` regains focus.
 - You can force `GamepadDesktop` to enter idle mode (no mouse control, no other functions) by pressing `Ctrl + Alt + Shift + 9.`
 If you want to automatically enter idle mode when a game is started, add the following script to **(Global) Scripts → Game scripts → Execute after a game is started" in Playnite:**
-<pre style="margin:0; padding:4px 8px; background:#f6f8fa; border:1px solid #d0d7de; border-radius:6px; font-family:Consolas, monospace; font-size:13px; line-height:1.4;">
-<code>
+```powershell
 Add-Type -AssemblyName System.Windows.Forms
 Start-Sleep -Milliseconds 500
 [System.Windows.Forms.SendKeys]::SendWait("^%+9")
-</code>
-</pre>
+```
 
 - The extension uses the window title of Playnite's Global Search to interact with it. Since this varies by language, only the most common cases are supported. If you encounter issues, please open an issue and specify your language. In the meantime, switching Playnite to English is recommended as a temporary workaround.
 - Each time `GamepadDesktop` starts, `$CurrentSlot` *(under `[Wizard]`)* is set to the first slot.
