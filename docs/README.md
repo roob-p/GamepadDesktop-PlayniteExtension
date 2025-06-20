@@ -64,8 +64,8 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
 
 ## ⚠️ Notes:
 - **Please make sure to maximize Playnite. It's required for the extension to work properly.**
-- **The script will automatically exit when `Playnite` is closed.**
-However, make sure `GamepadDesktop` is not running before updating it.
+- **The script will automatically exit when** `Playnite` **is closed.**
+**However, make sure `GamepadDesktop` is not running before updating it.**
 <!-- - When Playnite is not focused, `GamepadDesktop` still allows control of the cursor and mouse buttons for 17 seconds. This period lets you interact with game launchers or clients (e.g., Steam, GOG) to install games. After that, the script enters idle mode.!-->
 - When Playnite is not focused, `GamepadDesktop` still allows mouse control (movement, right click, and left click via both `$mouseleft` and `$tabjump_next`) for the duration set by `$time`. This lets you interact with other windows or recover if the OS steals focus. Please remember to click back on `Playnite` after interacting with any prompted clients or launchers. After this period, the script goes idle until `Playnite` regains focus.
 - You can force `GamepadDesktop` to enter idle mode (no mouse control, no other functions) by pressing `Ctrl + Alt + Shift + 9.`
