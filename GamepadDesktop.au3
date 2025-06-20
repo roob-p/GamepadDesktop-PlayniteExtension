@@ -3,9 +3,9 @@
 #AutoIt3Wrapper_Outfile=GamepadDesktop.exe
 #AutoIt3Wrapper_UseX64=n
 #AutoIt3Wrapper_Res_Description=GamepadDesktop
-#AutoIt3Wrapper_Res_Fileversion=1.0.2.0
+#AutoIt3Wrapper_Res_Fileversion=1.0.4.0
 #AutoIt3Wrapper_Res_ProductName=GamepadDesktop (Playnite-Extension)
-#AutoIt3Wrapper_Res_ProductVersion=1.0.2
+#AutoIt3Wrapper_Res_ProductVersion=1.0.4
 #AutoIt3Wrapper_Res_CompanyName=roob-p (author)
 #AutoIt3Wrapper_Res_LegalCopyright=roob-p (author)
 #AutoIt3Wrapper_Res_LegalTradeMarks=roob-p (author)
@@ -637,6 +637,20 @@ Else
 endif
 
 
+
+
+if bv($section_next) and $pos>=2 then
+	If Not $sn_pressed2 Then
+	MouseClick("left",$section3x,$section3y,1,10)
+	$pos=3
+	$sn_pressed2=True
+	endif
+Else
+    $sn_pressed2 = False
+endif
+
+
+
 if bv($section_next) and $pos=1 then
 	If Not $sn_pressed1 Then
 	MouseClick("left",$section2x,$section2y,1,10)
@@ -652,15 +666,7 @@ endif
 
 ;endif
 
-if bv($section_next) and $pos>=2 then
-	If Not $sn_pressed2 Then
-	MouseClick("left",$section3x,$section3y,1,10)
-	$pos=3
-	$sn_pressed2=True
-	endif
-Else
-    $sn_pressed2 = False
-endif
+
 
 
 
