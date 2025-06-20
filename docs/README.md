@@ -131,7 +131,8 @@ XInput support was added via the XInput UDF by Oxin8 (xoninx@gmail.com), a short
 
 <br>
 
-- Install directly:
+<!-- - Install directly:
   [GamepadDesktop](https://playnite.link/addons.html#GamepadDesktop)
 - Download last version:
-[v1.0.2]( https://github.com/roob-p/GamepadDesktop-PlayniteExtension/releases/download/v1.0.2/GamepadDesktop_v1.0.2.pext)
+[v1.0.3]( https://github.com/roob-p/GamepadDesktop-PlayniteExtension/releases/download/v1.0.3/GamepadDesktop_v1.0.3.pext) !-->
+
