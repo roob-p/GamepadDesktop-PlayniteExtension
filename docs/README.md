@@ -5,7 +5,7 @@
 # 🎮 GamepadDesktop (Playnite Extension)
 Control Playnite Desktop using your Xinput gamepad, with an integrated virtual keyboard and multiple functions mapped to the buttons!
 
-✨ This extension lets you use your gamepad with Playnite Desktop, allowing you to control various functions (mouse, scrollbars, Playnite shortcuts) and reach specific sections and panels through customizable positions. A virtual keyboard, to interact with fields, search and global search panels, is included.  
+✨ This extension lets you use your gamepad with Playnite Desktop, allowing you to control various functions (mouse, scrollbars, Playnite shortcuts) and reach specific sections through customizable positions. A virtual keyboard, to interact with fields, search and global search panels, is included.  
  
 ## 🚀 Functionality:
 - Common actions are mapped to every button and axes: mouse movement, scrollbars and function shortcuts.
@@ -16,7 +16,7 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
 - Support for autorun when Playnite starts. The script goes idle when Playnite is not focused.
 - Playnite menu integration showing program status and quick actions (run/stop, config edit, launch Wizard).
 - Support for different resolutions and auto-scaling onscreen keyboard.
-
+  
    
 
 ## ⚙️ How it works:
@@ -47,10 +47,10 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
 
   
   #### 📄 You can open `config.ini` and also edit manually several variables:
-  - Mouse settings: `$sensitivity`, `$deadzone` and `$smoothfactor` *(`[Mouse]` section):*
+  - Mouse settings: `$sensitivity`, `$deadzone` and `$smoothfactor` *(`[Mouse]` section).*
   - Reachable positions of sections and panels *(`[Global]` section):*
     - `$sectionNx`, `$sectionNy` → indicates the 3 points reachable with `$section_back` and `$section_next` *(`LB` and `RB` by default).*  
-    - `$sectionNpanelx`, `$sectionNpanely` → reachable points of the `Explorer's Tab` (if you are in the first zone) or the `Zoom control bar` (if you are in the second zone).  
+    - `$sectionNpanelx`, `$sectionNpanely` → reachable points of the `Explorer's Tab` ***(if you are in the 1st zone)*** or the `Zoom control bar` ***(if you are in the 2nd zone)*** with `$tabjump_back` and `$tabjump_next` *(`LT` and `RT` by default).*   
     - `$limit1`,`$limit2` → horizontal points which divide the screen in three zones. They are calculated in this manner: *DesktopXRes/ChosenMousePosition*, rounded to the third decimal.
     - `$CurrentSlot` *(`[Wizard]` section)* → modified when you change slot with controller. Used by the wizard to save the points. You can modified it and run the `wizard` also without `GamepadDesktop` running.
   - `$time` → duration *(in seconds)* for which `GamepadDesktop` continues to allow mouse control after `Playnite` loses focus. Useful for interacting with game clients (e.g., `Steam, GOG`) to install games, or recovering if OS steals focus (e.g., popups, updates). You can customize this value in the `[Global]` section *(default 17s).*
@@ -79,6 +79,18 @@ Start-Sleep -Milliseconds 500
 - The extension uses the window title of Playnite's Global Search to interact with it. Since this varies by language, only the most common cases are supported. If you encounter issues, please open an issue and specify your language. In the meantime, switching Playnite to English is recommended as a temporary workaround.
 - Each time `GamepadDesktop` starts, `$CurrentSlot` *(under `[Wizard]`)* is set to the first slot.
 - On each start, the script loads reachable points from the first slot, under `[Global]` section. You can also edit them directly by opening the `config.ini` manually or by using the corresponding menu option. `[Global.slot2]` and `[Global.slot3]` contains the points of the other slots.
+
+
+### ⚠️ Antivirus False Positives
+Some antivirus software may incorrectly flag `GamepadDesktop.exe` or `GamepadDesktop-Wizard.exe` as potentially harmful.  
+**These are false positives:**
+- The application does not contain any malicious code, backdoors, or telemetry.
+- The source code of the main components is included and available for review.
+- The compiled executables (`GamepadDesktop.exe` v1.0.4 and `GamepadDesktop-Wizard.exe` v1.0.1) have been submitted to Microsoft for analysis, and the detections have been removed after confirming that they are safe.
+
+If future versions are flagged again, you are welcome to submit the new .exe files yourself for analysis via:  
+[👉 Microsoft Security Intelligence Portal](https://www.microsoft.com/en-us/wdsi/filesubmission)  
+If you have any doubts, you can compile the main components yourself using AutoIt.
 
 
 <br>
