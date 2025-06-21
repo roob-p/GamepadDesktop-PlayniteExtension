@@ -76,7 +76,7 @@ Start-Sleep -Milliseconds 500
 - Each time `GamepadDesktop` starts, `$CurrentSlot` *(under `[Wizard]`)* is set to the first slot.
 - On each start, the script loads reachable points from the first slot, under `[Global]` section. You can also edit them directly by opening the `config.ini` manually or by using the corresponding menu option. `[Global.slot2]` and `[Global.slot3]` contains the points of the other slots.
 
-
+ 
 ### ⚠️ Antivirus False Positives
 Some antivirus software may incorrectly flag `GamepadDesktop.exe` or `GamepadDesktop-Wizard.exe` as potentially harmful.  
 **These are false positives:**
