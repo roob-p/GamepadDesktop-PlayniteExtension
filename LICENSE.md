@@ -6,7 +6,7 @@
 However:
 
 The file `Keyboard.au3` is proprietary.  
-- You may not copy or reuse significant portions of its code in your own projects.
-- You may not use it as a base to develop derivative projects.
+- You are not allowed to copy or reuse significant portions of its code in your own projects.
+- You are not allowed to use it as a base to develop derivative projects.
 
 By using this software, you agree to these terms.
