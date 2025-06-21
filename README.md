@@ -77,6 +77,20 @@ Start-Sleep -Milliseconds 500
 - On each start, the script loads reachable points from the first slot, under `[Global]` section. You can also edit them directly by opening the `config.ini` manually or by using the corresponding menu option. `[Global.slot2]` and `[Global.slot3]` contains the points of the other slots.
 
 
+### ⚠️ Antivirus False Positives
+Some antivirus software may incorrectly flag `GamepadDesktop.exe` or `GamepadDesktop-Wizard.exe` as potentially harmful.  
+**These are false positives:**
+- The application does not contain any malicious code, backdoors, or telemetry.
+- The source code of the main components is included and available for review.
+- The compiled executables (`GamepadDesktop.exe` v1.0.4 and `GamepadDesktop-Wizard.exe` v1.0.1) have been submitted to Microsoft for analysis, and the detections have been removed after confirming that they are safe.
+
+If future versions are flagged again, you are welcome to submit the new .exe files yourself for analysis via:  
+[👉 Microsoft Security Intelligence Portal](https://www.microsoft.com/en-us/wdsi/filesubmission)  
+If you have any doubts, you can compile the main components yourself using AutoIt.
+
+
+
+
 <br>
 
 **If you enjoy GamepadDesktop, you can buy me a coffee. It will be appreciated ;)**
