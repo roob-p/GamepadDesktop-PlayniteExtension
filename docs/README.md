@@ -135,7 +135,7 @@ If you have any doubts, you can compile the main components yourself using AutoI
  </table>
 <!--![Wizard](https://github.com/roob-p/GamepadDesktop-PlayniteExtension/blob/main/media/3.gif)!-->
 
-- License: [License.md](https://github.com/roob-p/GamepadDesktop-PlayniteExtension/edit/main/LICENSE.md)
+- License: [License.md](https://github.com/roob-p/GamepadDesktop-PlayniteExtension/main/LICENSE.md)
 
 ### 🎖️ Credits
 This gamepad script was written in AutoIt.  
