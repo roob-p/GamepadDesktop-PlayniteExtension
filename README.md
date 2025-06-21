@@ -43,7 +43,7 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
 
   
   #### 📄 You can open `config.ini` and also edit manually several variables:
-  - Mouse settings: `$sensitivity`, `$deadzone` and `$smoothfactor` *(`[Mouse]` section):*
+  - Mouse settings: `$sensitivity`, `$deadzone` and `$smoothfactor` *(`[Mouse]` section).*
   - Reachable positions of sections and panels *(`[Global]` section):*
     - `$sectionNx`, `$sectionNy` → indicates the 3 points reachable with `$section_back` and `$section_next` *(`LB` and `RB` by default).*  
     - `$sectionNpanelx`, `$sectionNpanely` → reachable points of the `Explorer's Tab` (if you are in the first zone) or the `Zoom control bar` (if you are in the second zone).  
