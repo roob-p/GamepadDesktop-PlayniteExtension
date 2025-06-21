@@ -12,7 +12,7 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
 - Support for autorun when Playnite starts. The script goes idle when Playnite is not focused.
 - Playnite menu integration showing program status and quick actions (run/stop, config edit, launch Wizard).
 - Support for different resolutions and auto-scaling onscreen keyboard.
-
+  
    
 
 ## ⚙️ How it works:
