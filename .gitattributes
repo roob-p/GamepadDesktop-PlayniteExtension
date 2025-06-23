@@ -11,3 +11,5 @@ docs/*.* export-ignore
 .gitignore export-ignore
 .github/*.* export-ignore
 manifest.yaml export-ignore
+other/*.* export-ignore
+other/ export-ignore
