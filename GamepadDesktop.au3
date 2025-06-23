@@ -3,9 +3,9 @@
 #AutoIt3Wrapper_Outfile=GamepadDesktop.exe
 #AutoIt3Wrapper_UseX64=n
 #AutoIt3Wrapper_Res_Description=GamepadDesktop
-#AutoIt3Wrapper_Res_Fileversion=1.0.4.0
+#AutoIt3Wrapper_Res_Fileversion=1.0.5.0
 #AutoIt3Wrapper_Res_ProductName=GamepadDesktop (Playnite-Extension)
-#AutoIt3Wrapper_Res_ProductVersion=1.0.4
+#AutoIt3Wrapper_Res_ProductVersion=1.0.5
 #AutoIt3Wrapper_Res_CompanyName=roob-p (author)
 #AutoIt3Wrapper_Res_LegalCopyright=roob-p (author)
 #AutoIt3Wrapper_Res_LegalTradeMarks=roob-p (author)
@@ -137,6 +137,8 @@ Global $timeridle= 0
 Global $hasfocus= False
 $timerlost=0
 $timerlostact=False
+
+$nofucusTNpressed=False
 
 ;$timerfps=Timerinit()
 
@@ -414,6 +416,12 @@ If PlayniteIsActive() Then
 ;$hasfocus=True ;useless
 $timerlostact=False
 $idle=False
+
+if $nofucusTNpressed then
+$mousepressed[3]=False
+mouseup("left")
+$nofucusTNpressed=False
+endif
 
 
 ;local $msg=GUIGetMsg()
@@ -979,6 +987,7 @@ Func ScrollWheel2($value, $deadZone)
         Else
             MouseWheel($MOUSE_WHEEL_UP, $steps)
         EndIf
+	;sleep(1)
     EndIf
 EndFunc
 
@@ -992,6 +1001,7 @@ Func ScrollWheel3($value, $deadZone)
         Else
             MouseWheel($MOUSE_WHEEL_UP, $steps)
         EndIf
+	;sleep(1)
     EndIf
 EndFunc
 
@@ -1138,6 +1148,7 @@ Func _HandleMouse($isDown,$index)
 			case 3
 			MouseDown("left")
 			$mousePressed[3] = True
+			$nofucusTNpressed=True
 		endswitch
     ElseIf Not $isDown And $mousePressed[$index] Then
 		switch $index
@@ -1147,9 +1158,10 @@ Func _HandleMouse($isDown,$index)
 			case 1
 			MouseUp("right")
 			$mousePressed[1] = False
-			Case 3
+			case 3
 			MouseUp("left")
 			$mousePressed[3] = False
+			$nofucusTNpressed=False
 		endswitch
     EndIf
 
