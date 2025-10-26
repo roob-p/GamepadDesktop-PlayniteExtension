@@ -84,7 +84,7 @@ Some antivirus software may incorrectly flag `GamepadDesktop.exe` or `GamepadDes
 - The source code of the main components is included and available for review.
 - The compiled executables (`GamepadDesktop.exe` v1.0.4 and `GamepadDesktop-Wizard.exe` v1.0.1) have been submitted to Microsoft for analysis, and the detections have been removed after confirming that they are safe.
 
-If future versions are flagged again, you are welcome to submit the new .exe files yourself for analysis via:  
+If future versions are flagged again, you are welcome to submit the new .exe files yourself for analysis via:
 - ➤ [Microsoft Security Intelligence Portal](https://www.microsoft.com/en-us/wdsi/filesubmission)  
 - ➤ [Bitdefender Sample Submission Form](https://www.bitdefender.com/en-us/business/submit) or [Bitdefender support email](mailto:virus_submission@bitdefender.com) 📩
 - ➤ [Google email](mailto:google-at-virustotal@google.com) 📩   
