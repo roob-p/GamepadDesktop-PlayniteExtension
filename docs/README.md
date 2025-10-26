@@ -93,7 +93,6 @@ If future versions are flagged again, you are welcome to submit the new .exe fil
 - ➤ [Bitdefender Sample Submission Form](https://www.bitdefender.com/en-us/business/submit) or [Bitdefender support email](mailto:virus_submission@bitdefender.com) 📩
 - ➤ [Google email](mailto:google-at-virustotal@google.com) 📩   
 If you have any doubts, you can compile the main components yourself using AutoIt.
-If you have any doubts, you can compile the main components yourself using AutoIt.
 
 
 <br>
