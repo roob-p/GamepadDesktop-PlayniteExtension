@@ -18,7 +18,7 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
 ## ⚙️ How it works:
 - The extension divides the screen into "zones" that can be reached by pressing buttons (*for default:* `LB` *and* `RB`). It also allows access to specific panels and can launch Playnite functions via shortcuts.
 - Use the `GamepadDesktop-Wizard` to edit panel and section positions: simply place the mouse over the indicated points and wait a few seconds. The Wizard saves the positions of the current slot. No restart required.
-- You can edit the controller layout by editing the `Keys` section in `config.ini`. Almost all buttons can be changed, with few exceptions:
+- You can edit the controller layout by editing the `Keys` section in `config.ini`. Almost all inputs can be changed, although some buttons will always have multiple behaviors:
   - When the OSK is open, `tabjump_next` *(`RT` for default)* is used for left mouse click. `A` is used to press buttons on the OnScreen Keyboard *(this is the only non-configurable function).*
   - Change slot by long-pressing `$explorerAndSlot_back` *(`LS` by default)* and `$FilterAndSlot_next` *(`RS` by default).* Short-pressing toggles Playnite’s ***Explorer*** and ***Filter*** panels.
   - Long-press `$globalsearch` *(`back` by default)* to launch Playnite fullscreen; short-press it to open Global Search.
