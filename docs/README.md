@@ -40,8 +40,8 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
     - Long press → launches `Playnite Fullscreen`
 - **The default keys are:**
   
-  -*`(Left Stick)`* `LSX` → `mousemovx` , `LSY` → `mousemovy` (mouse movement)    
-  -*`(Right Stick)`* `RSY` → `scroll` (scrollbars)  
+  -***`(Left Stick)`*** `LSX` → `mousemovx` , `LSY` → `mousemovy` (mouse movement)    
+  -***`(Right Stick)`*** `RSY` → `scroll` (scrollbars)  
   -`A` → `mouseleft` (mouseleft click)  
   -`B` → `mouseright` (mouseright click)  
   -`X` → `osk` (open/close osk)  
@@ -52,8 +52,8 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
   -`RB` → `section_next` (jump to the next section)  
   -`LT` → `tabjump_back` (jump to the previous panel of the current section)  
   -`RT` → `tabjump_next` (jump to the next panel of the current section)  
-  -*`(Left Stick Button)`* `LS` → `explorerAndSlot_back` (toggle Playnite Explorer panel, or change slot by long press)  
-  -*`(Right Stick Button)`* `RS` → `filterAndSlot_next` (toggle Playnite Filter panel, or change slot by long press)  
+  -***`(Left Stick Button)`*** `LS` → `explorerAndSlot_back` (toggle Playnite Explorer panel, or change slot by long press)  
+  -***`(Right Stick Button)`*** `RS` → `filterAndSlot_next` (toggle Playnite Filter panel, or change slot by long press)  
   -`D-pad`:`OSK closed` → selects games in the second zone, or navigates UI components (fields, zoom controls, and elements of the Explorer and Filter panels) in the first or third zone.   
   -`D-pad`:`OSK open` → moves between buttons on the OnScreen Keyboard.
 
@@ -61,8 +61,8 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
   #### 📄 You can open `config.ini` and also edit manually several variables:
   - Mouse settings: `sensitivity`, `deadzone` and `smoothfactor` *(`[Mouse]` section).*
   - Reachable positions of sections and panels *(`[Global]` section):*
-    - `sectionNx`, `sectionNy` → indicates the 3 points reachable with `section_back` and `section_next` *(`LB` and `RB` by default).*  
-    - `sectionNpanelx`, `sectionNpanely` → reachable points of the `Explorer's Tab` *(if you are in the 1st zone)* or the `Zoom control bar` *(if you are in the 2nd zone)* with `tabjump_back` and `tabjump_next` *(`LT` and `RT` by default).*   
+    - `sectionNx`, `sectionNy` → indicates the 3 points reachable with `section_back` and `section_next` (`LB` and `RB` by default).  
+    - `sectionNpanelx`, `sectionNpanely` → reachable points of the `Explorer's Tab` *(if you are in the 1st zone)* or the `Zoom control bar` *(if you are in the 2nd zone)* with `tabjump_back` and `tabjump_next` (`LT` and `RT` by default).   
     - `limit1`,`limit2` → horizontal points which divide the screen in three zones. They are calculated in this manner: *DesktopXRes/ChosenMousePosition*, rounded to the third decimal.
     - `CurrentSlot` *(`[Wizard]` section)* → modified when you change slot with controller. Used by the wizard to save the points. You can modified it and run the `wizard` also without `GamepadDesktop` running.
   - `time` → duration *(in seconds)* for which `GamepadDesktop` continues to allow mouse control after `Playnite` loses focus. Useful for interacting with game clients (e.g., `Steam, GOG`) to install games, or recovering if OS steals focus (e.g., popups, updates). You can customize this value in the `[Global]` section *(default 17s).*
