@@ -36,33 +36,33 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
     - Long press → launches `Playnite Fullscreen`
 - **The default keys are:**
   
-  -*`(Left Stick)`* `LSX` → `$mousemovx` , `LSY` → `$mousemovy` (mouse movement)    
-  -*`(Right Stick)`* `RSY` → `$scroll` (scrollbars)  
-  -`A` → `$mouseleft` (mouseleft click)  
-  -`B` → `$mouseright` (mouseright click)  
-  -`X` → `$osk` (open/close osk)  
-  -`Y` → `$search` (search panel)  
-  -`back` → `$globalsearch` (global search + Playnite Fullscreen mode by long press)  
-  -`start` → `$enter` (enter key)  
-  -`LB` → `$section_back` (jump to the previous section)  
-  -`RB` → `$section_next` (jump to the next section)  
-  -`LT` → `$tabjump_back` (jump to the previous panel of the current section)  
-  -`RT` → `$tabjump_next` (jump to the next panel of the current section)  
-  -*`(Left Stick Button)`* `LS` → `$explorerAndSlot_back` (toggle Playnite Explorer panel, or change slot by long press)  
-  -*`(Right Stick Button)`* `RS` → `$filterAndSlot_next` (toggle Playnite Filter panel, or change slot by long press)  
+  -***`(Left Stick)`*** `LSX` → `mousemovx` , `LSY` → `mousemovy` (mouse movement)    
+  -***`(Right Stick)`*** `RSY` → `scroll` (scrollbars)  
+  -`A` → `mouseleft` (mouseleft click)  
+  -`B` → `mouseright` (mouseright click)  
+  -`X` → `osk` (open/close osk)  
+  -`Y` → `search` (search panel)  
+  -`back` → `globalsearch` (global search + Playnite Fullscreen mode by long press)  
+  -`start` → `enter` (enter key)  
+  -`LB` → `section_back` (jump to the previous section)  
+  -`RB` → `section_next` (jump to the next section)  
+  -`LT` → `tabjump_back` (jump to the previous panel of the current section)  
+  -`RT` → `tabjump_next` (jump to the next panel of the current section)  
+  -***`(Left Stick Button)`*** `LS` → `explorerAndSlot_back` (toggle Playnite Explorer panel, or change slot by long press)  
+  -***`(Right Stick Button)`*** `RS` → `filterAndSlot_next` (toggle Playnite Filter panel, or change slot by long press)  
   -`D-pad`:`OSK closed` → selects games in the second zone, or navigates UI components (fields, zoom controls, and elements of the Explorer and Filter panels) in the first or third zone.   
   -`D-pad`:`OSK open` → moves between buttons on the OnScreen Keyboard.
 
   
   #### 📄 You can open `config.ini` and also edit manually several variables:
-  - Mouse settings: `$sensitivity`, `$deadzone` and `$smoothfactor` *(`[Mouse]` section).*
+  - Mouse settings: `sensitivity`, `deadzone` and `smoothfactor` *(`[Mouse]` section).*
   - Reachable positions of sections and panels *(`[Global]` section):*
-    - `$sectionNx`, `$sectionNy` → indicates the 3 points reachable with `$section_back` and `$section_next` *(`LB` and `RB` by default).*  
-    - `$sectionNpanelx`, `$sectionNpanely` → reachable points of the `Explorer's Tab` ***(if you are in the 1st zone)*** or the `Zoom control bar` ***(if you are in the 2nd zone)*** with `$tabjump_back` and `$tabjump_next` *(`LT` and `RT` by default).*   
-    - `$limit1`,`$limit2` → horizontal points which divide the screen in three zones. They are calculated in this manner: *DesktopXRes/ChosenMousePosition*, rounded to the third decimal.
-    - `$CurrentSlot` *(`[Wizard]` section)* → modified when you change slot with controller. Used by the wizard to save the points. You can modified it and run the `wizard` also without `GamepadDesktop` running.
-  - `$time` → duration *(in seconds)* for which `GamepadDesktop` continues to allow mouse control after `Playnite` loses focus. Useful for interacting with game clients (e.g., `Steam, GOG`) to install games, or recovering if OS steals focus (e.g., popups, updates). You can customize this value in the `[Global]` section *(default 17s).*
-  - `$sleepIdleTime` → sleep duration *(in milliseconds)* while in idle mode *(default: 600 ms).*
+    - `sectionNx`, `sectionNy` → indicates the 3 points reachable with `section_back` and `section_next` *(`LB` and `RB` by default).*  
+    - `sectionNpanelx`, `sectionNpanely` → reachable points of the `Explorer's Tab` *(if you are in the 1st zone)* or the `Zoom control bar` *(if you are in the 2nd zone)* with `tabjump_back` and `tabjump_next` (`LT` and `RT` by default).   
+    - `limit1`,`limit2` → horizontal points which divide the screen in three zones. They are calculated in this manner: *DesktopXRes/ChosenMousePosition*, rounded to the third decimal.
+    - `CurrentSlot` *(`[Wizard]` section)* → modified when you change slot with controller. Used by the wizard to save the points. You can modified it and run the `wizard` also without `GamepadDesktop` running.
+  - `time` → duration *(in seconds)* for which `GamepadDesktop` continues to allow mouse control after `Playnite` loses focus. Useful for interacting with game clients (e.g., `Steam, GOG`) to install games, or recovering if OS steals focus (e.g., popups, updates). You can customize this value in the `[Global]` section *(default 17s).*
+  - `sleepIdleTime` → sleep duration *(in milliseconds)* while in idle mode *(default: 600 ms).*
 
  
 
@@ -75,7 +75,7 @@ Control Playnite Desktop using your Xinput gamepad, with an integrated virtual k
 - **The script will automatically exit when Playnite is closed.**
 **However, make sure `GamepadDesktop` is not running before updating it.**
 <!-- - When Playnite is not focused, `GamepadDesktop` still allows control of the cursor and mouse buttons for 17 seconds. This period lets you interact with game launchers or clients (e.g., Steam, GOG) to install games. After that, the script enters idle mode.!-->
-- When Playnite is not focused, `GamepadDesktop` still allows mouse control (movement, right click, and left click via both `$mouseleft` and `$tabjump_next`) for the duration set by `$time`. This lets you interact with other windows or recover if the OS steals focus. Please remember to click back on `Playnite` after interacting with any prompted clients or launchers. After this period, the script goes idle until `Playnite` regains focus.
+- When Playnite is not focused, `GamepadDesktop` still allows mouse control (movement, right click, and left click via both `mouseleft` and `tabjump_next`) for the duration set by `time`. This lets you interact with other windows or recover if the OS steals focus. Please remember to click back on `Playnite` after interacting with any prompted clients or launchers. After this period, the script goes idle until `Playnite` regains focus.
 - You can force `GamepadDesktop` to enter idle mode (no mouse control, no other functions) by pressing `Ctrl + Alt + Shift + 9.`
 If you want to automatically enter idle mode when a game is started, add the following script to **(Global) Scripts → Game scripts → Execute after a game is started" in Playnite:**
 ```powershell
@@ -85,7 +85,7 @@ Start-Sleep -Milliseconds 500
 ```
 
 - The extension uses the window title of Playnite's Global Search to interact with it. Since this varies by language, only the most common cases are supported. If you encounter issues, please open an issue and specify your language. In the meantime, switching Playnite to English is recommended as a temporary workaround.
-- Each time `GamepadDesktop` starts, `$CurrentSlot` *(under `[Wizard]`)* is set to the first slot.
+- Each time `GamepadDesktop` starts, `CurrentSlot` *(under `[Wizard]`)* is set to the first slot.
 - On each start, the script loads reachable points from the first slot, under `[Global]` section. You can also edit them directly by opening the `config.ini` manually or by using the corresponding menu option. `[Global.slot2]` and `[Global.slot3]` contains the points of the other slots.
 
  
