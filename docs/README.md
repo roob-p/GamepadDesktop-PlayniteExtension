@@ -113,7 +113,15 @@ If you have any doubts, you can compile the main components yourself using AutoI
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/E1E214R1KB)
 
-<br>
+<br>  
+
+- Github repo: 🐙 [roob-p/GamepadDesktop-PlayniteExtension](https://github.com/roob-p/GamepadDesktop-PlayniteExtension)  
+- Install directly:
+  [GamepadDesktop](https://playnite.link/addons.html#GamepadDesktop)  
+- Download last version:
+[v1.0.5]( https://github.com/roob-p/GamepadDesktop-PlayniteExtension/releases/download/v1.0.5/GamepadDesktop_v1.0.5.pext)
+
+<br>  
 
 
 <!--![1](https://github.com/roob-p/GamepadDesktop-PlayniteExtension/blob/main/media/1.gif)!-->
@@ -157,10 +165,6 @@ XInput support was added via the XInput UDF by Oxin8 (xoninx@gmail.com), a short
 
 <br>
 
-- Github repo: 🐙 [roob-p/GamepadDesktop-PlayniteExtension](https://github.com/roob-p/GamepadDesktop-PlayniteExtension)
-- Install directly:
-  [GamepadDesktop](https://playnite.link/addons.html#GamepadDesktop)
-- Download last version:
-[v1.0.5]( https://github.com/roob-p/GamepadDesktop-PlayniteExtension/releases/download/v1.0.5/GamepadDesktop_v1.0.5.pext)
+
 
 
