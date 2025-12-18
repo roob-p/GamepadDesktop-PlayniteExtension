@@ -3,6 +3,8 @@
 [![🔙 Back](https://img.shields.io/badge/🔙-Back-white?style=flat-square&logoColor=blue&color=blue)](https://roob-p.github.io)
 
 # 🎮 GamepadDesktop (Playnite Extension)
+![GitHub Downloads](https://img.shields.io/github/downloads/roob-p/GamepadDesktop-PlayniteExtension/total)
+
 *Control Playnite Desktop using your Xinput gamepad, with an integrated virtual keyboard and multiple functions mapped to the buttons!*
 
 ✨ This extension lets you use your gamepad with Playnite Desktop, allowing you to control various functions (mouse, scrollbars, Playnite shortcuts) and reach specific sections through customizable positions. A built-in virtual keyboard to interact with fields, search and global search panels, is also included.  
