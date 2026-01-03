@@ -1081,7 +1081,7 @@ func mouse()
 
 	; Smooth movement - interpolation between current and target position
 	; $smoothFactor = 0.1 ; How smooth should the movement be? (0 = no smoothing, 1 = very smooth)  #WRONG
-	; $smoothFactor = 0.2 ; How smooth should the movement be? (1 = no smoothing, near 0 = very smooth, values below 0.1 may make the cursor too slow) #OK
+	; $smoothFactor = 0.2 ; How smooth should the movement be? (1 = no smoothing, near 0 = very smooth, values below 0.1 may make the cursor too slow, 0 blocks the cursor – be cautious) #OK
 
 
     ; Gradually calculate the mouse position
@@ -1291,5 +1291,6 @@ EndFunc
  ;if bv($mouseright) then
  ; mouseclick("right")
  ;endif
+
 
 
