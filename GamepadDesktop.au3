@@ -1080,7 +1080,8 @@ func mouse()
     $newY = Clip($newY, 0, @DesktopHeight) ;1080
 
 	; Smooth movement - interpolation between current and target position
-	; $smoothFactor = 0.1 ; How smooth should the movement be? (0 = no smoothing, 1 = very smooth)
+	; $smoothFactor = 0.1 ; How smooth should the movement be? (0 = no smoothing, 1 = very smooth)  #WRONG
+	; $smoothFactor = 0.2 ; How smooth should the movement be? (1 = no smoothing, near 0 = very smooth, values below 0.1 may make the cursor too slow) #OK
 
 
     ; Gradually calculate the mouse position
@@ -1290,4 +1291,5 @@ EndFunc
  ;if bv($mouseright) then
  ; mouseclick("right")
  ;endif
+
 
