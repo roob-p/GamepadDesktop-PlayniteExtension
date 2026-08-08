@@ -83,12 +83,9 @@
 <!-- - When Playnite is not focused, `GamepadDesktop` still allows control of the cursor and mouse buttons for 17 seconds. This period lets you interact with game launchers or clients (e.g., Steam, GOG) to install games. After that, the script enters idle mode.!-->
 - When Playnite is not focused, `GamepadDesktop` still allows mouse control (movement, right click, and left click via both `mouseleft` and `tabjump_next`) for the duration set by `time`. This lets you interact with other windows or recover if the OS steals focus. Please remember to click back on `Playnite` after interacting with any prompted clients or launchers. After this period, the script goes idle until `Playnite` regains focus.
 - You can force `GamepadDesktop` to enter idle mode (no mouse control, no other functions) by pressing `Ctrl + Alt + Shift + 9.`
-If you want to automatically enter idle mode when a game is started, add the following script to **(Global) Scripts → Game scripts → Execute after a game is started" in Playnite:**
-```powershell
-Add-Type -AssemblyName System.Windows.Forms
-Start-Sleep -Milliseconds 500
-[System.Windows.Forms.SendKeys]::SendWait("^%+9")
-```
+- Since version 1.0.6, GamepadDesktop automatically enters idle mode when a game starts. If you previously added the idle mode script to (Global) Scripts → Game scripts → "Execute after a game is started in Playnite", please remove it.
+- To prevent GamepadDesktop from entering idle mode for a specific game, add the following to the "Execute after a game is started script" for that game in Playnite: `$GamepadDesktopNoIdle = 1`.
+- Set `$GamepadDesktopNoIdle = 2` if you want GamepadDesktop to enter idle mode 15 seconds after the game starts. This can be useful for games that require some interaction with a launcher before the game is ready.
 
 - The extension uses the window title of Playnite's Global Search to interact with it. Since this varies by language, only the most common cases are supported. If you encounter issues, please open an issue and specify your language. In the meantime, switching Playnite to English is recommended as a temporary workaround.
 - Each time `GamepadDesktop` starts, `CurrentSlot` *(under `[Wizard]`)* is set to the first slot.
