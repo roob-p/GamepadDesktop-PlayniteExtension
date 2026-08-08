@@ -1,11 +1,11 @@
 #Region ;**** Directives created by AutoIt3Wrapper_GUI ****
 #AutoIt3Wrapper_Icon=iconW.ico
 #AutoIt3Wrapper_Outfile=GamepadDesktop.exe
-#AutoIt3Wrapper_UseX64=n
+#AutoIt3Wrapper_UseX64=y
 #AutoIt3Wrapper_Res_Description=GamepadDesktop
-#AutoIt3Wrapper_Res_Fileversion=1.0.5.0
+#AutoIt3Wrapper_Res_Fileversion=1.0.6.0
 #AutoIt3Wrapper_Res_ProductName=GamepadDesktop (Playnite-Extension)
-#AutoIt3Wrapper_Res_ProductVersion=1.0.5
+#AutoIt3Wrapper_Res_ProductVersion=1.0.6
 #AutoIt3Wrapper_Res_CompanyName=roob-p (author)
 #AutoIt3Wrapper_Res_LegalCopyright=roob-p (author)
 #AutoIt3Wrapper_Res_LegalTradeMarks=roob-p (author)
