@@ -6,7 +6,7 @@
 	#if (-not(get-process("_XInputExample controller")-EA 0)){
 	#start-process "$PSScriptRoot\_XInputExample controller.exe"
 	#}
-	
+	$GamepadDesktopNoIdle=0
 	$config = @{}
 	Get-Content -Path "$PSScriptRoot\autorun.ini" | ForEach-Object {
 	$parts = $_ -split "="
@@ -315,3 +315,39 @@ function Customize()
 	
 	start-process "$PSScriptRoot\GamepadDesktop-Wizard.exe"
 } 
+
+
+
+
+function OnGameStarted()
+{
+    param($args)
+	
+	
+	$scripts = $args.Game.GameStartedScript
+
+if ($scripts -and ( $scripts.Contains('$GamepadDesktopNoIdle=1') -or $scripts.Contains('$GamepadDesktopNoIdle = 1') -or $scripts.Contains('$GamepadDesktopNoIdle= 1') -or $scripts.Contains('$GamepadDesktopNoIdle =1') ) )  {
+	$GamepadDesktopNoIdle = 1
+}elseif ($scripts -and ( $scripts.Contains('$GamepadDesktopNoIdle=2') -or $scripts.Contains('$GamepadDesktopNoIdle = 2') -or $scripts.Contains('$GamepadDesktopNoIdle= 2') -or $scripts.Contains('$GamepadDesktopNoIdle =2') ) )  {
+	$GamepadDesktopNoIdle = 2
+} else{ 
+	$GamepadDesktopNoIdle = 0
+}
+
+
+if ($GamepadDesktopNoIdle -eq 0) {
+Add-Type -AssemblyName System.Windows.Forms
+Start-Sleep -Milliseconds 500
+[System.Windows.Forms.SendKeys]::SendWait("^%+9")
+}
+
+if ($GamepadDesktopNoIdle -eq 2) {
+Add-Type -AssemblyName System.Windows.Forms
+Start-Sleep -Milliseconds 15000
+[System.Windows.Forms.SendKeys]::SendWait("^%+9")
+}
+
+
+
+
+}	
