@@ -98,6 +98,7 @@ Some antivirus software may incorrectly flag `GamepadDesktop.exe` or `GamepadDes
 - The application does not contain any malicious code, backdoors, or telemetry.
 - The source code of the main components is included and available for review.
 - The compiled executables (`GamepadDesktop.exe` v1.0.6 and `GamepadDesktop-Wizard.exe` v1.0.1) have been submitted to Microsoft for analysis, and the detections have been removed after confirming that they are safe.
+- Since version 1.0.6, GamepadDesktop is now compiled in 64-bit to help reduce false-positive detections. A 32-bit version is still available for manual download if needed.
 
 If future versions are flagged again, you are welcome to submit the new .exe files yourself for analysis via:  
 - ➤ [Microsoft Security Intelligence Portal](https://www.microsoft.com/en-us/wdsi/filesubmission)  
