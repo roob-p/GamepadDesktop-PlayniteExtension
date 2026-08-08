@@ -121,7 +121,7 @@ If you have any doubts, you can compile the main components yourself using AutoI
 - 🧩 Install directly:
   [GamepadDesktop](https://playnite.link/addons.html#GamepadDesktop)  
 - 📥 Download last version:
-[v1.0.5]( https://github.com/roob-p/GamepadDesktop-PlayniteExtension/releases/download/v1.0.5/GamepadDesktop_v1.0.5.pext)
+[v1.0.6]( https://github.com/roob-p/GamepadDesktop-PlayniteExtension/releases/download/v1.0.6/GamepadDesktop_v1.0.6.pext)
 
 <br>  
 
