@@ -10,7 +10,7 @@ Packages:
       - GamepadDesktop now automatically enters idle mode when a game starts. 
       - To prevent GamepadDesktop from entering idle mode for a specific game, add `$GamepadDesktopNoIdle = 1` in "Execute after a game is started script" for that game in Playnite. 
       - Set `$GamepadDesktopNoIdle = 2` if you want GamepadDesktop to enter idle mode 15 seconds after the game starts (this can be useful for games that require some interaction with a launcher before the game is ready.
-      - If you previously added the idle mode script to* ***(Global) Scripts → Game scripts → "Execute after a game is started in Playnite", please remove it.
+      - If you previously added the idle mode script to (Global) Scripts → Game scripts → "Execute after a game is started in Playnite", please remove it.
   - Version: 1.0.5
     RequiredApiVersion: 6.0.0
     ReleaseDate: 2025-06-23
